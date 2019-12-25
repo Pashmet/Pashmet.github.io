@@ -42,7 +42,7 @@ gulp.task('js', function () {
 
 gulp.task('watch', function f() {
     gulp.watch('src/scss/**/*.scss', gulp.parallel('scss'));
-    gulp.watch('dist/**/*.html', gulp.parallel('html'));
+    gulp.watch('src/**/*.html', gulp.parallel('html'));
     gulp.watch(['src/img/**/*.jpg', 'src/img/**/*.png'], gulp.parallel('img'));
     gulp.watch(['src/fonts/**/*'], gulp.parallel('fonts'));
     gulp.watch('src/js/**/*.js', gulp.parallel('js'));
@@ -51,7 +51,7 @@ gulp.task('watch', function f() {
 gulp.task('html', function () {
     return gulp.src('src/index.html')
         .pipe(rigger())
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('dist/'))
         .pipe(sync.reload({ stream: true }));
 });
 

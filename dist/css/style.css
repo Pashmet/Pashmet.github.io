@@ -1,0 +1,16 @@
+p {
+  width: 60px;
+  height: 60px;
+  background-color: yellow;
+}
+
+h2 {
+  background: #212142;
+}
+
+.footer__info {
+  background: #363636;
+  color: #a9a9a9;
+  padding: 52px;
+  text-transform: uppercase;
+}

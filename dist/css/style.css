@@ -222,8 +222,93 @@ a {
 }
 
 .footer__info {
-  background: #363636;
+  background-color: #363636;
+  padding-top: 61px;
+}
+
+.footer__header {
+  color: #ffffff;
+  font-family: poppins, sans-serif;
+  font-size: 22px;
+}
+
+.footer__link {
+  font-family: poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
   color: #a9a9a9;
-  padding: 52px;
-  text-transform: uppercase;
+}
+
+.footer__link:hover {
+  font-family: poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #a9a9a9;
+  text-decoration: underline;
+}
+
+.footer__cards {
+  padding-bottom: 44px;
+}
+
+.footer__card {
+  margin-right: 5px;
+  margin-top: 14px;
+}
+
+.footer-copyright {
+  font-family: poppins, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding-top: 40px;
+  background-color: #2a2a2a;
+}
+
+.copyright-wrapper {
+  color: #a9a9a9;
+  margin-bottom: 20px;
+}
+
+.footer__icons {
+  margin-bottom: 35px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.footer__icon {
+  font-size: 18px;
+  font-weight: 400;
+  color: #a1a1a1;
+  margin-right: 20px;
+}
+
+.pin-ic .footer__icon:last-child {
+  margin-right: 0;
+}
+
+.footer__icon:hover {
+  color: #d58e32;
+}
+
+.wrapper {
+  max-width: 1138px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    max-width: 1100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    max-width: 678px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    max-width: 400px;
+  }
 }

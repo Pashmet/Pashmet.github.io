@@ -63,6 +63,7 @@ a {
   color: #D8D8D8;
   font-size: 17px;
   font-family: poppins, sans-serif;
+  margin: 0 auto;
 }
 
 .header_logo {
@@ -101,6 +102,7 @@ a {
   font-family: poppins, sans-serif;
   box-shadow: 0 8px 5px -3px #b0b0b0;
   padding: 20px 20px 20px 50px;
+  margin: 0 auto;
 }
 
 .top-menu_search-wrapper {

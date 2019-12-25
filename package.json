@@ -1,7 +1,6 @@
 {
   "name": "step-project-online-shop",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,5 +22,6 @@
     "gulp-concat": "^2.6.1",
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "^4.0.2"
-  }
+  },
+  "description": ""
 }

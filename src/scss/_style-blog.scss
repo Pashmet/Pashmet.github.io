@@ -1,0 +1,144 @@
+@mixin font ($f-size,$f-weight,$color) {
+  font-family: poppins, sans-serif;
+  font-size: $f-size;
+  font-weight:$f-weight ;
+  color: $color;
+}
+
+.blog{
+  height: 665px;
+  &__header{
+@include font(20px, 600, #d58e32)
+  }
+  &__wrapper{
+    max-width: 1138px;
+    margin: 0 auto;
+  }
+}
+
+
+
+.orange{
+  width: 44px;
+  height: 3px;
+  background-color:#d58e32;
+}
+
+.gray{
+  width:calc(100% - 115px);
+  height: 3px;
+  background-color:#e2e2e2;
+}
+.blog__slide{
+  margin-top: 34px;
+  &-nameplate{
+    //width: 300px;
+    //height: 312px;
+    background-color: #ffffff;
+  }
+}
+ .blog__slide .carousel-control-next, .carousel-control-prev{
+   top: -52px;
+   width: 30px;
+   height: 30px;
+   border: 1px solid black;
+   opacity:1 ;
+   background-image: none;
+   box-sizing: border-box;
+   &:hover{
+     border: 1px solid #d58e32;
+     background-color: #d58e32;
+     opacity: 1;
+     box-sizing: border-box;
+        }
+   &:hover .carousel-control-prev-icon{
+  color: white;
+   }
+   &:hover .carousel-control-next-icon{
+     color: white;
+   }
+
+   &-icon{
+     background-image: none;
+     font-size: 20px;
+     color: black;
+     line-height: 20px;
+   }
+}
+.blog__slide .carousel-control-prev{
+  right: 36px;
+  left: unset;
+}
+
+.blog__slide .carousel-item{
+  //background-image: url("../img/1blog.jpg");
+  //background-repeat: no-repeat;
+  //width: 360px;
+  height: 542px;
+  //margin: 0 auto;
+  text-align: center;
+
+}
+.blog__slide-nameplate{
+  //margin: 0 auto;
+  //text-align: center;
+  top: 230px;
+  width: 300px;
+  height: 312px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.blog__info{
+  @include font(13px, 400, #676767);
+  &-dark{
+    @include font(15px, 400, #2a2a2a)
+  }
+  &-wrapper{
+    margin: 23px  23px  0 23px;
+  }
+}
+ .blog{
+   &__caption{
+     @include font(16px, 600, #2a2a2a);
+     margin-top: 40px;
+   }
+   &__text{
+     @include font(14px, 400, #676767);
+     margin-top: 19px;
+     line-height: 20px;
+   }
+   &__btn{
+     @include font(16px, 400, #ffffff);
+     background: #2a2a2a;
+     padding: 16px 40px 16px;
+     border-radius: unset;
+     margin-top: 38px;
+     border: none;
+     line-height: 16px;
+   }
+ }
+
+
+
+
+
+@media ( max-width: 1200px){
+  .blog__wrapper{
+    max-width: 1100px;
+  }
+}
+
+@media ( max-width: 768px){
+  .blog__wrapper{
+    max-width: 678px;
+  }
+}
+
+@media ( max-width: 480px) {
+  .blog__wrapper {
+    max-width: 400px;
+  }
+  .carousel-indicators{
+    display: none;
+  }
+}

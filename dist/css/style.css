@@ -228,6 +228,10 @@ a {
   position: absolute;
 }
 
+.furniture__item {
+  width: 262px;
+}
+
 .furniture__item:hover {
   text-decoration: none;
 }
@@ -244,6 +248,14 @@ a {
   display: block;
 }
 
+.furniture__item:hover .furniture__info-title {
+  color: #d58e32;
+}
+
+.furniture__item:hover .furniture__price {
+  background-color: #d58e32;
+}
+
 .furniture__sale {
   background-color: #2a2a2a;
   font-family: poppins, sans-serif;
@@ -257,21 +269,90 @@ a {
   transform: translateX(-50%);
 }
 
+.furniture__qView {
+  bottom: 0;
+  left: 10px;
+  background-color: #2a2a2a;
+  font-family: poppins, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 11px;
+  padding: 13px 8px;
+}
+
+.furniture__addCart {
+  bottom: 0;
+  right: 10px;
+  background-color: #2a2a2a;
+  font-family: poppins, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 11px;
+  padding: 11.5px 9px;
+}
+
+.furniture__cart-icon {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
 .furniture__picture {
   position: relative;
   background-color: #f4f5f7;
+  height: 262px;
+}
+
+.furniture__img {
+  height: 100%;
+}
+
+.furniture__info {
+  border-bottom: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+  border-left: 1px solid #e2e2e2;
+  padding: 0 11px;
+}
+
+.furniture__info-title {
+  font-family: poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2a2a2a;
+  padding-top: 16px;
+  margin-bottom: 10px;
+}
+
+.furniture__priceContainer {
+  margin-top: 19px;
+  margin-bottom: 12px;
+}
+
+.furniture__heart, .furniture__arrows {
+  padding: 9.5px;
+  margin-right: 5px;
+  font-size: 16px;
+  color: #2a2a2a;
+  border: 1px solid #2a2a2a;
+  display: flex;
+}
+
+.furniture__price {
+  font-family: poppins, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 9.5px 12px;
+  background-color: #2a2a2a;
+  line-height: 18px;
 }
 
 .furniture__stars {
   position: relative;
-}
-
-.furniture__stars:before {
-  content: '';
-  height: 1px;
-  width: 100%;
-  background-color: #000000;
-  position: absolute;
+  padding-bottom: 21px;
+  border-bottom: 1px solid #000000;
+  color: #2a2a2a;
 }
 
 .furniture__stars:after {
@@ -280,6 +361,9 @@ a {
   width: 30px;
   background-color: #d58e32;
   position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .stocks__wrapper {

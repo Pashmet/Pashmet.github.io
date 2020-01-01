@@ -20,7 +20,10 @@ $black: #000000;
 
 .furniture__item {
   width: 262px;
-  //height: 410px;
+
+  &-wrapper {
+    margin-bottom: 30px;
+  }
 
   &:hover {
     text-decoration: none;
@@ -48,9 +51,37 @@ $black: #000000;
 }
 
 .furniture {
-  &__header{
-
+  &__header {
+    @include font(22px, 600, $dark);
+    line-height: 17px;
+    padding-bottom: 18px;
+    //margin-bottom: 30px;
+    &-underline {
+      height: 1px;
+      background-color: $black;
+      margin-top: 1px;
+      margin-bottom: 30px;
+    }
   }
+
+  &__btnFilter {
+    @include font(14px, 600, $dark);
+    line-height: 14px;
+    border: 1px solid #cfcfcf;
+    padding: 9px;
+    margin-bottom: 14px;
+
+    & i {
+      font-size: 18px;
+      line-height: 14px;
+      margin-right: 7px;
+    }
+
+    //&-wrapper{
+    //  border-bottom: 1px solid $black;
+    //}
+  }
+
   &__sale {
     background-color: $dark;
     @include font(12px, 500, $white);
@@ -130,7 +161,21 @@ $black: #000000;
     padding: 9.5px 12px;
     background-color: $dark;
     line-height: 18px;
+  }
 
+  &__loadMore {
+    font-size: 24px;
+    border-radius: 50%;
+    background-color: #eeeeee;
+    box-shadow: 0 4px 6px rgba(1, 2, 2, 0.2);
+    padding: 15px;
+    color: $dark;
+    margin-bottom: 70px;
+    margin-top: 5px;
+    &:hover{
+      text-decoration: none;
+      color: $orange;
+    }
   }
 }
 

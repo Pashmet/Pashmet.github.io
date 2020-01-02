@@ -28,9 +28,86 @@
             <div class="nav_menu-left--item"><a href="http://joxi.ru/L21PewvHR3Ldbm">Help</a></div>
         </div>
         <div class="nav_menu-right">
-            <div class="nav_menu-right--item"><i class="fas fa-user"></i><a href="#">Login</a></div>
+            <div class="nav_menu-right--item" data-toggle="modal" data-target="#logModal"><i class="fas fa-user"></i><a
+                    href="#">Login</a>
+                <div class="modal fade modalMine" id="logModal" tabindex="-1" role="dialog" aria-labelledby="logModal"
+                     aria-hidden="true">
+                    <div class="modal-dialog modal-md" role="document">
+                        <div class="modal-content modal-contentMine">
     
-            <div class="nav_menu-right--item"><i class="fas fa-lock"></i><a href="#">Register</a></div>
+                            <div class="modal-header modal-headerMine">
+                                <button class="close closeMine" type="button" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+    
+                            <div class="modal-body">
+                                <h4 class="modal-title modal-titleMine" id="logModalLabel">login</h4>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="logInputEmail"></label>
+                                        <input type="email" class="form-control" id="logInputEmail"
+                                               aria-describedby="emailHelp" placeholder="Name/Email*" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="logInputPass"></label>
+                                        <input type="password" class="form-control" id="logInputPass"
+                                               placeholder="Password*">
+                                    </div>
+                                </form>
+                            </div>
+    
+                            <div class="modal-footer modal-footerMine">
+                                <button type="submit" class="bnt-secondaryMine" data-dismiss="modal">login</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="nav_menu-right--item" data-toggle="modal" data-target="#regModal"><i class="fas fa-lock"></i><a
+                    href="#">Register</a>
+                <!--        register-modal-->
+                <div class="modal fade modalMine" id="regModal" tabindex="-1" role="dialog" aria-labelledby="regModal"
+                     aria-hidden="true">
+                    <div class="modal-dialog modal-md" role="document">
+                        <div class="modal-content modal-contentMine">
+    
+                            <div class="modal-header modal-headerMine">
+                                <button class="close closeMine" type="button" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+    
+                            <div class="modal-body">
+                                <h4 class="modal-title modal-titleMine" id="regModalLabel">registration</h4>
+                                <form>
+                                    <div class="form-group form-groupMine">
+                                        <label for="regInputName"></label>
+                                        <input type="text" class="form-control input-user" id="regInputName"
+                                               placeholder="Name*" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="regInputEmail"></label>
+                                        <input type="email" class="form-control" id="regInputEmail"
+                                               aria-describedby="emailHelp" placeholder="Email*" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPass"></label>
+                                        <input type="password" class="form-control" id="exampleInputPass"
+                                               placeholder="Password*">
+                                    </div>
+                                </form>
+                            </div>
+    
+                            <div class="modal-footer modal-footerMine">
+                                <button type="submit" class="bnt-secondaryMine" data-dismiss="modal">Register</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--        register-modal-->
+            </div>
         </div>
     </section>
     <section class="header">
@@ -41,16 +118,16 @@
         </div>
     
     </section>
-    <section class="top-menu">
+    <section class="top-menu d-flex justify-content-between">
     
-        <div class="top-menu_search-wrapper">
-            <label class="top-menu_btn-search"><input class="form-control" id="usr" name="username" value="Search products..."/></label>
+        <div class="top-menu__search-wrapper">
+            <label><input id="usr" name="search" placeholder="Search products..."/></label>
             <a href="#"><i class="fas fa-search"></i></a>
         </div>
     
     
-        <div class="top-menu_dropdown">
-            <input id="menu__toggle" type="checkbox" />
+        <div class="top-menu__dropdown">
+            <input id="menu__toggle" type="checkbox"/>
             <label class="menu__btn" for="menu__toggle">
                 <span></span>
             </label>
@@ -63,6 +140,63 @@
                 <li><a class="menu__item" href="#">gallery</a></li>
                 <li><a class="menu__item" href="#">blog</a></li>
             </ul>
+        </div>
+    </section>
+    <section class="top-slider">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active carousel-itemMine">
+                    <img src="img/1_480.jpg" alt="Here is a picture with the interior">
+                </div>
+                <div class="carousel-item carousel-itemMine">
+                    <img src="img/2_480.jpg" alt="Here is a picture with the interior">
+                </div>
+            </div>
+    
+            <!-- Left and right controls -->
+    
+            <a class="carousel-control-prev carousel-control-prevMine1" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next carousel-control-prevMine2" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        <div class="carousel-onlay">
+            <p class="carousel-onlay__textup">indoor furniture</p>
+            <p class="carousel-onlay__textdown">save up to 50% of all furniture</p>
+        </div>
+        <button class="carousel-onlay-but">shop now</button>
+    </section>
+    <section class="our-features">
+        <div class="our-features__wrapper">
+            <div class="our-features_circle"><i class="fas fa-truck"></i></div>
+            <div class="our-features__blocks col-sm">
+                <div class="our-features_text"><p>free shipping</p>
+                    <p>all order</p></div>
+            </div>
+        </div>
+        <div class="our-features__wrapper">
+            <div class="our-features_circle"><i class="fas fa-headphones"></i></div>
+            <div class="our-features__blocks col-sm">
+                <div class="our-features_text"><p>24/7 customer</p>
+                    <p>support</p></div>
+            </div>
+        </div>
+        <div class="our-features__wrapper">
+            <div class="our-features_circle"><i class="fas fa-reply-all"></i></div>
+            <div class="our-features__blocks col-sm">
+                <div class="our-features_text"><p>money back</p>
+                    <p>guarantee</p></div>
+            </div>
+        </div>
+        <div class="our-features__wrapper">
+            <div class="our-features_circle"><i class="fas fa-bullhorn"></i></div>
+            <div class="our-features__blocks col-sm">
+                <div class="our-features_text"><p>member discount</p>
+                    <p>first order</p></div>
+            </div>
         </div>
     </section>
     <section class="stocks">

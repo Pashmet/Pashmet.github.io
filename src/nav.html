@@ -5,8 +5,85 @@
         <div class="nav_menu-left--item"><a href="http://joxi.ru/L21PewvHR3Ldbm">Help</a></div>
     </div>
     <div class="nav_menu-right">
-        <div class="nav_menu-right--item"><i class="fas fa-user"></i><a href="#">Login</a></div>
+        <div class="nav_menu-right--item" data-toggle="modal" data-target="#logModal"><i class="fas fa-user"></i><a
+                href="#">Login</a>
+            <div class="modal fade modalMine" id="logModal" tabindex="-1" role="dialog" aria-labelledby="logModal"
+                 aria-hidden="true">
+                <div class="modal-dialog modal-md" role="document">
+                    <div class="modal-content modal-contentMine">
 
-        <div class="nav_menu-right--item"><i class="fas fa-lock"></i><a href="#">Register</a></div>
+                        <div class="modal-header modal-headerMine">
+                            <button class="close closeMine" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+                            <h4 class="modal-title modal-titleMine" id="logModalLabel">login</h4>
+                            <form>
+                                <div class="form-group">
+                                    <label for="logInputEmail"></label>
+                                    <input type="email" class="form-control" id="logInputEmail"
+                                           aria-describedby="emailHelp" placeholder="Name/Email*" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="logInputPass"></label>
+                                    <input type="password" class="form-control" id="logInputPass"
+                                           placeholder="Password*">
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="modal-footer modal-footerMine">
+                            <button type="submit" class="bnt-secondaryMine" data-dismiss="modal">login</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav_menu-right--item" data-toggle="modal" data-target="#regModal"><i class="fas fa-lock"></i><a
+                href="#">Register</a>
+            <!--        register-modal-->
+            <div class="modal fade modalMine" id="regModal" tabindex="-1" role="dialog" aria-labelledby="regModal"
+                 aria-hidden="true">
+                <div class="modal-dialog modal-md" role="document">
+                    <div class="modal-content modal-contentMine">
+
+                        <div class="modal-header modal-headerMine">
+                            <button class="close closeMine" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+                            <h4 class="modal-title modal-titleMine" id="regModalLabel">registration</h4>
+                            <form>
+                                <div class="form-group form-groupMine">
+                                    <label for="regInputName"></label>
+                                    <input type="text" class="form-control input-user" id="regInputName"
+                                           placeholder="Name*" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="regInputEmail"></label>
+                                    <input type="email" class="form-control" id="regInputEmail"
+                                           aria-describedby="emailHelp" placeholder="Email*" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPass"></label>
+                                    <input type="password" class="form-control" id="exampleInputPass"
+                                           placeholder="Password*">
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="modal-footer modal-footerMine">
+                            <button type="submit" class="bnt-secondaryMine" data-dismiss="modal">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--        register-modal-->
+        </div>
     </div>
 </section>

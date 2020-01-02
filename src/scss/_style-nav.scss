@@ -50,3 +50,47 @@ a {
 .fa-user, .fa-lock{
   padding-right: 10px;
 }
+/*register-modal and login-modal*/
+.modalMine {
+  transition: 1s;
+}
+.modal-contentMine {
+  border-radius: 1px;
+}
+.modal-headerMine {
+  padding: 12px 0;
+}
+.closeMine {
+  opacity: 1;
+}
+.closeMine :hover {
+  background-color: #2A2A2A;
+  outline: none;
+}
+.closeMine span{
+  color: #ffffff;
+  background-color: #2A2A2A;
+  padding: 10px 19px;
+}
+.modal-titleMine {
+  text-transform: uppercase;
+  text-align: left;
+  color: #2A2A2A;
+  font-weight: bolder;
+}
+.form-groupMine {
+  border-radius: 0;
+}
+.bnt-secondaryMine {
+  padding: 10px 20px;
+  color: #ffffff;
+  background-color: #2A2A2A;
+  text-transform: uppercase;
+  justify-content: left;
+  border-radius: 3px;
+
+}
+.modal-footerMine {
+  justify-content: flex-start;
+}
+/*register-modal and login-modal*/

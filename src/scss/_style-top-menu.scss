@@ -1,12 +1,12 @@
 .top-menu {
+  margin: 0 auto;
   width: 565px;
   height: 86px;
   font-family: poppins, sans-serif;
   box-shadow: 0 8px 5px -3px #b0b0b0;
   padding: 20px 20px 20px 50px;
-  margin: 0 auto;
 }
-.top-menu_search-wrapper {
+.top-menu__search-wrapper {
   width: 227px;
   height: 47px;
   font-size: 14px;
@@ -15,12 +15,16 @@
   padding: 10px;
 
 }
+.top-menu__dropdown {
+  position: relative;
+}
 #usr {
   width: 185px;
   height: 15px;
   border: none;
   font-size: 14px;
   color: #B0B0B0;
+  outline: none;
 }
 .fa-search {
   color: #2A2A2A;
@@ -33,11 +37,12 @@
   display: flex;
   align-items: center;
   position: absolute;
-  top: 230px;
-  left: 473px;
+  top: 0;
+  right: 40px;
   width: 28px;
   height: 28px;
   cursor: pointer;
+  z-index: 3;
 }
 
 .menu__btn>span,
@@ -54,27 +59,24 @@
   content: '';
   top: -4px;
   position: absolute;
-  /*background-color: white;*/
 }
-
 .menu__btn>span::after {
   content: '';
   top: 4px;
   position: absolute;
-  /*background-color: white;*/
 }
 .menu__box {
-
   position: absolute;
+  z-index: 2;
   visibility: hidden;
-  top: 200px;
-  left: 350px;
+  top: -21px;
+  left: -178px;
   width: 154px;
   height: 402px;
   text-align: right;
   padding-top: 100px;
   background-color: #363636;
-  /*z-index: -1;*/
+  list-style-type: none;
 }
 .menu__item {
   display: block;
@@ -82,12 +84,12 @@
   color: #B8B8B8;
   font-family: poppins, sans-serif;
   font-size: 12px;
-  /*text-decoration: none;*/
   text-transform: uppercase;
 }
 
 .menu__item:hover {
   color: #ffffff;
+  text-decoration: none;
   border-bottom: 1px solid #646464;
 }
 /*крестик/плюсик в меню*/

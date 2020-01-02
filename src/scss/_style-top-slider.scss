@@ -1,0 +1,74 @@
+.top-slider {
+  position: relative;
+}
+
+.top-slider {
+  margin: 0 auto;
+  width: 449px;
+  background-size: 100%;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-control-prevMine1, .carousel-control-prevMine2 {
+  top: 270px;
+  width: 50%;
+  background-color: #2A2A2A;
+  opacity: 2;
+}
+
+.carousel-control-prevMine1:hover {
+  background-color: #D58E32;
+  opacity: 2;
+
+}
+
+.carousel-control-prevMine2:hover {
+  background-color: #D58E32;
+  opacity: 2;
+}
+
+.carousel-onlay {
+  position: absolute;
+  width: 410px;
+  height: 220px;
+  background-color: #2A2A2A;
+  color: #ffffff;
+  top: 30px;
+  left: 20px;
+  opacity: 0.7;
+}
+
+.carousel-onlay__textup {
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 40px;
+  line-height: 20px;
+  font-weight: bolder;
+}
+
+.carousel-onlay__textdown {
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.carousel-onlay-but {
+  position: absolute;
+  top: 160px;
+  left: 153px;
+  padding: 15px 30px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  color: #2A2A2A;
+}
+.carousel-onlay-but:focus {
+  outline: none;
+}

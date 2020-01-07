@@ -515,7 +515,6 @@
 }
 
 .our-features {
-  width: 263px;
   margin: 40px auto;
 }
 
@@ -523,6 +522,8 @@
   position: relative;
   height: 161px;
   margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .our-features__blocks {
@@ -531,16 +532,18 @@
   position: absolute;
   top: 35px;
   border: 1px solid #BCBCBC;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .our-features_circle {
   position: absolute;
   top: 0;
-  left: 85px;
-  width: 80px;
+  left: 50%;
+  transform: translateX(-50%);
   border: 1px solid #BCBCBC;
   border-radius: 50%;
-  padding: 6px;
+  padding: 5px;
   text-align: center;
   z-index: 1;
   background-color: #ffffff;
@@ -551,7 +554,7 @@
   border: 1px solid #BCBCBC;
   background-color: #ffffff;
   border-radius: 50%;
-  padding: 20px 18px;
+  padding: 20px 20px;
   font-size: 20px;
 }
 

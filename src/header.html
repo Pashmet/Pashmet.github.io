@@ -1,8 +1,78 @@
 <section class="header">
-    <div class="header_contactnumber">2300 - 3560 - 222</div>
-    <div class="header_logo"><img src="img/BazarIcon.png" alt="Here is an image"></div>
-    <div class="header_basket-icon"><i class="fas fa-shopping-basket"></i>
-        <div class="header_basket-icon--circle"><p>0</p></div>
+    <div class="header__contactnumber"><a href="http://joxi.ru/L21PewvHR3Ldbm">2300 - 3560 - 222</a></div>
+    <div class="header__logo"><img src="img/BazarIcon.png" alt="Here is an image"></div>
+    <div class="header__basket-icon" id="basketButton" data-toggle="modal" data-target="#basketEmptyModal"><a href="#"><i
+            class="fas fa-shopping-basket"></i></a>
+        <div class="header__basket-icon--circle"><p id="basket-iconMine">0</p></div>
     </div>
 
+    <!--        basket empty modal-->
+    <div class="modal fade ModalMine" id="basketEmptyModal" tabindex="-1" role="dialog"
+         aria-labelledby="basketEmptyModal" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header modal-headerMine">
+                    <button class="close closeMine" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body modal-bodyEmptyMine"><p>Your cart <br>is empty</p>
+                    <p>But it's never too<br>
+                        late to fix it :)</p></div>
+            </div>
+        </div>
+    </div>
+    <!--        basket empty modal-->
+    <!--        full basket modal-->
+
+    <div class="modal fade" id="basketFullModal" tabindex="-1" role="dialog" aria-labelledby="basketFullModal"
+         aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content modal-content__basketFullMine">
+                <div class="modal-header modal-header__basketFullMine">
+                    <button class="close close__basketFullMine" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-content__body-footer">
+                    <div class="modal-body modal-body__basketFullMine">
+                        <div class="container-fluid">
+
+                            <div class="row">
+                                <div class="col-7 basketFullMine-img"><img src="img/gallery_5_200.png" alt="Here is an image"></div>
+                                <div class="col-5 basketFullMine__name">Sunbaby<br>
+                                    Magic Chair
+                                    <p class="basketFullMine__name-oldPrice">&#36;350.00</p>
+                                    <div class="basketFullMine__name-newPrice">&#36;250.00</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-8 basketFullMine-quantity">Quantity:<br>
+                                    <p class="quantity">4</p>
+                                    <p class="sign">-</p>
+                                    <p class="sign">+</p>
+
+                                </div>
+                                <div class="col-4 basketFullMine__sum">Sum
+                                    <div class="basketFullMine__sum-num">&#36;250.00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer modal-footer__basketFullMine">
+                        <div class="basketFullMine__total-price">Total: &#36;1000</div>
+                        <button type="submit" class="btn-left__basketFullMine" data-dismiss="modal"><i
+                                class="fas fa-chevron-right fa-chevron__basketFullMine"></i>continue
+                        </button>
+                        <button type="submit" class="btn-right__basketFullMine" data-dismiss="modal"><i
+                                class="fas fa-shopping-basket fa-basket__basketFullMine"></i>buy now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--        full basket modal-->
 </section>

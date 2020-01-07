@@ -515,7 +515,6 @@
 }
 
 .our-features {
-  width: 263px;
   margin: 40px auto;
 }
 
@@ -531,13 +530,15 @@
   position: absolute;
   top: 35px;
   border: 1px solid #BCBCBC;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .our-features_circle {
   position: absolute;
   top: 0;
-  left: 85px;
-  width: 80px;
+  left: 50%;
+  transform: translateX(-50%);
   border: 1px solid #BCBCBC;
   border-radius: 50%;
   padding: 6px;
@@ -803,7 +804,6 @@
 
 .gallery {
   margin: 0 auto;
-  width: 453px;
   font-family: poppins, sans-serif;
 }
 

@@ -31,3 +31,20 @@ $('.blog__carousel').slick({
 
     ]
 });
+
+// 0/1 basket
+document.getElementById("basketInGallery").onclick = function () {
+    const basketIcon = document.getElementById("basket-iconMine");
+    // let qty = basketIcon.innerHTML;
+    // const newQty = +qty+1;
+    // basketIcon.innerHTML = newQty;
+
+
+    let qty = basketIcon.innerHTML;
+    basketIcon.innerHTML = +qty + 1;
+
+    let basket = document.getElementById("basketButton");
+    basket.setAttribute("data-target", "#basketFullModal")
+};
+
+// 0/1 basket

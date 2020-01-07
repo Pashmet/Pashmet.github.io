@@ -6,6 +6,7 @@
   box-shadow: 0 8px 5px -3px #b0b0b0;
   padding: 20px 20px 20px 50px;
 }
+
 .top-menu__search-wrapper {
   width: 227px;
   height: 47px;
@@ -15,9 +16,11 @@
   padding: 10px;
 
 }
+
 .top-menu__dropdown {
   position: relative;
 }
+
 #usr {
   width: 185px;
   height: 15px;
@@ -26,6 +29,7 @@
   color: #B0B0B0;
   outline: none;
 }
+
 .fa-search {
   color: #2A2A2A;
 }
@@ -33,21 +37,22 @@
 #menu__toggle {
   opacity: 0;
 }
+
 .menu__btn {
   display: flex;
   align-items: center;
   position: absolute;
   top: 0;
   right: 40px;
-  width: 28px;
-  height: 28px;
+  width: 29px;
+  height: 30px;
   cursor: pointer;
   z-index: 3;
 }
 
-.menu__btn>span,
-.menu__btn>span::before,
-.menu__btn>span::after {
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
   display: flex;
   position: absolute;
   width: 100%;
@@ -55,29 +60,31 @@
   background-color: #2A2A2A;
 }
 
-.menu__btn>span::before {
+.menu__btn > span::before {
   content: '';
-  top: -4px;
+  top: -5px;
   position: absolute;
 }
-.menu__btn>span::after {
+
+.menu__btn > span::after {
   content: '';
-  top: 4px;
+  top: 5px;
   position: absolute;
 }
+
 .menu__box {
   position: absolute;
   z-index: 2;
   visibility: hidden;
   top: -21px;
-  left: -178px;
+  left: -175px;
   width: 154px;
   height: 402px;
   text-align: right;
   padding-top: 100px;
   background-color: #363636;
-  list-style-type: none;
 }
+
 .menu__item {
   display: block;
   padding: 10px 4px;
@@ -88,26 +95,31 @@
 }
 
 .menu__item:hover {
-  color: #ffffff;
+  /*color: #ffffff;*/
+  color: #D58E32;
   text-decoration: none;
-  border-bottom: 1px solid #646464;
+  /*border-bottom: 1px solid #646464;*/
+  border-top: 1px solid #000000;
 }
+
 /*крестик/плюсик в меню*/
-#menu__toggle:checked~.menu__btn>span {
+#menu__toggle:checked ~ .menu__btn > span {
   transform: rotate(45deg);
   background-color: white;
   z-index: 2;
 }
+
 /*крестик в гамбургере настраивает*/
-#menu__toggle:checked~.menu__btn>span::before {
+#menu__toggle:checked ~ .menu__btn > span::before {
   top: 0;
   transform: rotate(0);
   background-color: white;
   z-index: 2;
 
 }
+
 /*крестик в гамбургере настраивает*/
-#menu__toggle:checked~.menu__btn>span::after {
+#menu__toggle:checked ~ .menu__btn > span::after {
   top: 0;
   transform: rotate(90deg);
   background-color: white;
@@ -115,7 +127,7 @@
 
 }
 
-#menu__toggle:checked~.menu__box {
+#menu__toggle:checked ~ .menu__box {
   visibility: visible;
   right: 0;
 }

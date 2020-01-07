@@ -2,11 +2,13 @@
   width: 263px;
   margin: 40px auto;
 }
+
 .our-features__wrapper {
   position: relative;
   height: 161px;
   margin-top: 30px;
 }
+
 .our-features__blocks {
   width: 263px;
   height: 121px;
@@ -14,6 +16,7 @@
   top: 35px;
   border: 1px solid #BCBCBC;
 }
+
 .our-features_circle {
   position: absolute;
   top: 0;
@@ -39,6 +42,7 @@
 .fa-truck {
   transform: scale(-1, 1);
 }
+
 .our-features_text {
   text-align: center;
   padding-top: 65px;
@@ -46,30 +50,37 @@
   font-size: 20px;
   line-height: 7px;
 }
+
 .our-features_text p:first-child {
   font-weight: bolder;
 }
+
 .our-features__wrapper:hover .our-features_text {
   color: #E0A38E;
 }
+
 .our-features__wrapper:hover .our-features_circle {
   border-color: #D58E32;
 }
+
 .our-features__wrapper:hover .fa-truck {
   color: #ffffff;
   background-color: #D58E32;
   border-color: #D58E32;
 }
+
 .our-features__wrapper:hover .fa-headphones {
   color: #ffffff;
   background-color: #D58E32;
   border-color: #D58E32;
 }
+
 .our-features__wrapper:hover .fa-reply-all {
   color: #ffffff;
   background-color: #D58E32;
   border-color: #D58E32;
 }
+
 .our-features__wrapper:hover .fa-bullhorn {
   color: #ffffff;
   background-color: #D58E32;

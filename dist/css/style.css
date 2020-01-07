@@ -353,8 +353,8 @@
   position: absolute;
   top: 0;
   right: 40px;
-  width: 28px;
-  height: 28px;
+  width: 29px;
+  height: 30px;
   cursor: pointer;
   z-index: 3;
 }
@@ -371,13 +371,13 @@
 
 .menu__btn > span::before {
   content: '';
-  top: -4px;
+  top: -5px;
   position: absolute;
 }
 
 .menu__btn > span::after {
   content: '';
-  top: 4px;
+  top: 5px;
   position: absolute;
 }
 
@@ -386,13 +386,12 @@
   z-index: 2;
   visibility: hidden;
   top: -21px;
-  left: -178px;
+  left: -175px;
   width: 154px;
   height: 402px;
   text-align: right;
   padding-top: 100px;
   background-color: #363636;
-  list-style-type: none;
 }
 
 .menu__item {
@@ -405,9 +404,11 @@
 }
 
 .menu__item:hover {
-  color: #ffffff;
+  /*color: #ffffff;*/
+  color: #D58E32;
   text-decoration: none;
-  border-bottom: 1px solid #646464;
+  /*border-bottom: 1px solid #646464;*/
+  border-top: 1px solid #000000;
 }
 
 /*крестик/плюсик в меню*/

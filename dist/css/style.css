@@ -124,12 +124,12 @@
   color: #D8D8D8;
 }
 
-.header_logo {
+.header__logo {
   margin-top: 40px;
   align-self: start;
 }
 
-.header_basket-icon {
+.header__basket-icon {
   padding: 9px 16px 9px 9px;
   background-color: #D58E32;
   border-radius: 3px;
@@ -144,7 +144,7 @@
   color: #ffffff;
 }
 
-.header_basket-icon--circle {
+.header__basket-icon--circle {
   position: absolute;
   border-radius: 50%;
   background-color: #363636;
@@ -155,13 +155,159 @@
   left: 36px;
 }
 
-.header_basket-icon--circle p {
+.header__basket-icon--circle p {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
+/*basket empty modal*/
+.modal-bodyEmptyMine {
+  font-size: 49px;
+  text-transform: uppercase;
+  color: #939393;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.modal-bodyEmptyMine p:last-child {
+  font-size: 24px;
+  color: #939393;
+}
+
+/*basket empty modal*/
+/*full basket modal*/
+.close__basketFullMine {
+  opacity: 1;
+}
+
+.close__basketFullMine span {
+  background-color: #2A2A2A;
+  padding: 10px 20px;
+  color: #FFFFFF;
+  opacity: 2;
+}
+
+.modal-content__basketFullMine {
+  border-radius: 0;
+}
+
+.modal-header__basketFullMine {
+  border: none;
+  padding: 12px 0 0 0;
+}
+
+.modal-content__body-footer {
+  padding: 20px 55px 30px 15px;
+}
+
+.modal-content__body-footer:hover .btn-right__basketFullMine {
+  background-color: #D58E32;
+  border-color: #D58E32;
+  color: #FFFFFF;
+}
+
+.modal-content__body-footer:hover .sign {
+  color: #D58E32;
+  border-color: #D58E32;
+}
+
+.modal-body__basketFullMine {
+  border: 1px solid #CECECE;
+  padding: 0;
+}
+
+.basketFullMine__name {
+  font-size: 25px;
+  font-weight: bolder;
+  color: #2A2A2A;
+}
+
+.basketFullMine__name-oldPrice {
+  font-size: 25px;
+  font-weight: lighter;
+  color: #C5C5C5;
+  text-decoration: line-through;
+}
+
+.basketFullMine__name-newPrice {
+  font-size: 26px;
+  color: #FFFFFF;
+  background-color: #2A2A2A;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.basketFullMine__sum {
+  font-size: 25px;
+  color: #C5C5C5;
+}
+
+.basketFullMine__sum-num {
+  color: #2A2A2A;
+  font-size: 26px;
+  font-weight: bolder;
+}
+
+.basketFullMine-quantity {
+  font-size: 16px;
+  font-weight: bolder;
+  color: #636363;
+}
+
+.quantity {
+  display: inline-block;
+  border: 1px solid #636363;
+  padding: 5px 30px;
+}
+
+.sign {
+  display: inline-block;
+  border: 1px solid #2A2A2A;
+  padding: 5px 15px;
+}
+
+.modal-footer__basketFullMine {
+  border: none;
+  display: block;
+  padding: 0;
+  position: relative;
+}
+
+.btn-left__basketFullMine, .btn-right__basketFullMine {
+  padding: 10px 15px 10px 0;
+  font-size: 13px;
+  color: #FFFFFF;
+  background-color: #939393;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.btn-right__basketFullMine {
+  position: absolute;
+  right: 0;
+}
+
+.basketFullMine__total-price {
+  text-align: right;
+  font-size: 26px;
+  color: #2A2A2A;
+  padding: 15px 0;
+}
+
+.fa-chevron__basketFullMine {
+  padding: 0 10px 0 15px;
+  font-size: 16px;
+}
+
+.fa-basket__basketFullMine {
+  padding: 0 15px 0 15px;
+  font-size: 18px;
+}
+
+/*full basket modal*/
 .top-menu {
   margin: 0 auto;
   width: 565px;
@@ -207,8 +353,8 @@
   position: absolute;
   top: 0;
   right: 40px;
-  width: 28px;
-  height: 28px;
+  width: 29px;
+  height: 30px;
   cursor: pointer;
   z-index: 3;
 }
@@ -225,13 +371,13 @@
 
 .menu__btn > span::before {
   content: '';
-  top: -4px;
+  top: -5px;
   position: absolute;
 }
 
 .menu__btn > span::after {
   content: '';
-  top: 4px;
+  top: 5px;
   position: absolute;
 }
 
@@ -240,13 +386,12 @@
   z-index: 2;
   visibility: hidden;
   top: -21px;
-  left: -178px;
+  left: -175px;
   width: 154px;
   height: 402px;
   text-align: right;
   padding-top: 100px;
   background-color: #363636;
-  list-style-type: none;
 }
 
 .menu__item {
@@ -259,9 +404,11 @@
 }
 
 .menu__item:hover {
-  color: #ffffff;
+  /*color: #ffffff;*/
+  color: #D58E32;
   text-decoration: none;
-  border-bottom: 1px solid #646464;
+  /*border-bottom: 1px solid #646464;*/
+  border-top: 1px solid #000000;
 }
 
 /*крестик/плюсик в меню*/
@@ -307,19 +454,19 @@
   height: 100%;
 }
 
-.carousel-control-prevMine1, .carousel-control-prevMine2 {
+.carousel-control-prevMine, .carousel-control-nextMine {
   top: 270px;
   width: 50%;
   background-color: #2A2A2A;
   opacity: 2;
 }
 
-.carousel-control-prevMine1:hover {
+.carousel-control-prevMine:hover {
   background-color: #D58E32;
   opacity: 2;
 }
 
-.carousel-control-prevMine2:hover {
+.carousel-control-nextMine:hover {
   background-color: #D58E32;
   opacity: 2;
 }

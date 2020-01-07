@@ -3,10 +3,6 @@
   margin: 0 auto;
 }
 
-a {
-  text-decoration: none;
-}
-
 .nav {
   display: flex;
   justify-content: space-between;
@@ -64,14 +60,14 @@ a {
 
 .modal-headerMine {
   padding: 12px 0;
+  border: none;
 }
 
 .closeMine {
   opacity: 1;
 }
 
-.closeMine :hover {
-  background-color: #2A2A2A;
+.closeMine:focus {
   outline: none;
 }
 
@@ -92,7 +88,7 @@ a {
   border-radius: 0;
 }
 
-.bnt-secondaryMine {
+.btn-bottomMine {
   padding: 10px 20px;
   color: #ffffff;
   background-color: #2A2A2A;
@@ -103,6 +99,7 @@ a {
 
 .modal-footerMine {
   justify-content: flex-start;
+  border: none;
 }
 
 /*register-modal and login-modal*/

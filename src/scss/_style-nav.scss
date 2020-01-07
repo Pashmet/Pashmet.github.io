@@ -1,7 +1,3 @@
-a {
-  text-decoration: none;
-}
-
 .nav {
   display: flex;
   justify-content: space-between;
@@ -14,6 +10,7 @@ a {
   font-size: 13px;
   font-family: poppins, sans-serif;
   margin: 0 auto;
+
 }
 
 .nav_menu-left {
@@ -36,38 +33,43 @@ a {
   color: #D8D8D8;
 
 }
+
 .nav_menu-right--item a {
   color: #D8D8D8;
-
-
 }
+
 .nav_menu-left--item a:hover, .nav_menu-right--item a:hover {
   border-bottom: 1px solid #D8D8D8;
   color: #D8D8D8;
   text-decoration: none;
 }
 
-.fa-user, .fa-lock{
+.fa-user, .fa-lock {
   padding-right: 10px;
 }
+
 /*register-modal and login-modal*/
 .modalMine {
   transition: 1s;
 }
+
 .modal-contentMine {
   border-radius: 1px;
 }
+
 .modal-headerMine {
   padding: 12px 0;
+  border: none;
 }
+
 .closeMine {
   opacity: 1;
 }
-.closeMine :hover {
-  background-color: #2A2A2A;
+.closeMine:focus {
   outline: none;
 }
-.closeMine span{
+
+.closeMine span {
   color: #ffffff;
   background-color: #2A2A2A;
   padding: 10px 19px;
@@ -78,10 +80,12 @@ a {
   color: #2A2A2A;
   font-weight: bolder;
 }
+
 .form-groupMine {
   border-radius: 0;
 }
-.bnt-secondaryMine {
+
+.btn-bottomMine {
   padding: 10px 20px;
   color: #ffffff;
   background-color: #2A2A2A;
@@ -90,7 +94,10 @@ a {
   border-radius: 3px;
 
 }
+
 .modal-footerMine {
   justify-content: flex-start;
+  border: none;
 }
+
 /*register-modal and login-modal*/

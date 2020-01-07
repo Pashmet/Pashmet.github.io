@@ -454,19 +454,19 @@
   height: 100%;
 }
 
-.carousel-control-prevMine1, .carousel-control-prevMine2 {
+.carousel-control-prevMine, .carousel-control-nextMine {
   top: 270px;
   width: 50%;
   background-color: #2A2A2A;
   opacity: 2;
 }
 
-.carousel-control-prevMine1:hover {
+.carousel-control-prevMine:hover {
   background-color: #D58E32;
   opacity: 2;
 }
 
-.carousel-control-prevMine2:hover {
+.carousel-control-nextMine:hover {
   background-color: #D58E32;
   opacity: 2;
 }

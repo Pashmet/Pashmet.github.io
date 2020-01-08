@@ -196,3 +196,44 @@ $black: #000000;
     transform: translateX(-50%);
   }
 }
+
+.filter{
+  &__category-item{
+    position: relative;
+  }
+  &__categories-checkbox:checked + .filter__categories-label:before {
+    color: $orange;
+  }
+  &__categories-checkbox:checked + .filter__categories-label:after {
+    background: $orange;
+  }
+  &__categories-checkbox:checked + .filter__categories-label{
+    color: $orange;
+  }
+  &__category-list{
+    list-style-type:none;
+    padding: 0;
+  }
+
+    &__categories-label:before{
+    content:'>';
+    display: inline-block;
+  }
+  &__categories-label:after{
+    content:'';
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    position: absolute;
+    background: $dark;
+    right: 0;
+  }
+}
+
+.categories-label-sum{
+  position: absolute;
+  right: 7px;
+  color: $white;
+  z-index: 1;
+}

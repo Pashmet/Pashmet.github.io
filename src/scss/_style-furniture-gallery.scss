@@ -22,7 +22,7 @@
 
 .gallery-line {
   border: 1px solid #E2E2E2;
-  padding: 0 56px;
+  padding: 0 67px;
   list-style: none;
 
 }
@@ -37,7 +37,7 @@
 
 .gallery-button {
   border: 1px solid #E2E2E2;
-  padding: 12px 13px;
+  padding: 12px 24px;
   font-size: 17px;
   color: #2A2A2A;
   font-family: poppins, sans-serif;
@@ -181,7 +181,7 @@
 .gallery-arrow1 {
   position: absolute;
   visibility: hidden;
-  width: 90px;
+  width: 95px;
   height: 26px;
   background-color: #2A2A2A;
   color: #f1f1f1;
@@ -330,3 +330,37 @@
 }
 
 /*CAROUSEL*/
+
+.gallery2Sect {
+  background-color: #E8EDF7;
+  padding: 55px 40px 15px 40px;
+
+}
+.gallery2Sect__priceText {
+  text-transform: uppercase;
+  color: #2A2A2A;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.gallery2Sect__priceText span {
+  font-size: 40px;
+  font-weight: bolder;
+  color: #79AE30;
+}
+.gallery2Sect__nameText {
+  font-size: 40px;
+  color: #D58E32;
+  font-weight: bolder;
+}
+.gallery2Sect__button {
+  background-color: #79AE30;
+  border-color: #79AE30;
+  border-radius: 3px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 13px 27px;
+  font-size: 12px;
+  font-weight: bolder;
+
+}
+

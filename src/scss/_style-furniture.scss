@@ -198,6 +198,13 @@ $black: #000000;
 }
 
 .filter{
+&__title{
+  border-bottom: 1px solid $black;
+  padding-bottom: 14px;
+  margin-bottom: 30px;
+  @include font(16px, 600, $dark);
+  line-height: 16px;
+}
   &__category-item{
     position: relative;
   }
@@ -207,10 +214,10 @@ $black: #000000;
   &__categories-checkbox:checked + .filter__categories-label:after {
     background: $orange;
   }
-  &__categories-checkbox:checked + .filter__categories-label{
+  &__categories-checkbox:checked + .filter-label{
     color: $orange;
   }
-  &__category-list{
+  &-list{
     list-style-type:none;
     padding: 0;
   }
@@ -228,12 +235,50 @@ $black: #000000;
     position: absolute;
     background: $dark;
     right: 0;
+    top: 0;
+
   }
+  &-label{
+    @include font(13px, 500, $dark)
+    line-height: 13px;
+    margin-bottom: 20px;
+  }
+
 }
 
-.categories-label-sum{
+.label-sum{
   position: absolute;
-  right: 7px;
+  right: 8px;
   color: $white;
   z-index: 1;
+  line-height: 12px;
+}
+
+.filter__color{
+  &-label{
+    position: relative;
+    margin-left: 24px;
+  }
+  &-label:before{
+    position: absolute;
+    left: -24px;
+    content: '';
+    width: 14px;
+    height: 14px;
+    background: #fa5f66;
+    border-radius: 3px;
+   }
+
+  &-label:after{
+    position: absolute;
+    left: -19px;
+    top: 2px;
+    content: '';
+    width: 4px;
+    height: 7px;
+    border: solid $white;
+    border-width: 0 1px 1px 0;
+    transform: rotate(45deg);
+
+  }
 }

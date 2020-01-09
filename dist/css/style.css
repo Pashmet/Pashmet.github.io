@@ -306,6 +306,12 @@
 }
 
 /*full basket modal*/
+@media (min-width: 1200px) {
+  .menu__btn {
+    visibility: hidden;
+  }
+}
+
 .top-menu {
   margin: 0 auto;
   height: 86px;
@@ -389,6 +395,7 @@
   text-align: right;
   padding-top: 100px;
   background-color: #363636;
+  list-style: none;
 }
 
 .menu__item {

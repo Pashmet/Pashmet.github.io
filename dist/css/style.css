@@ -819,7 +819,7 @@
 
 .gallery-lines {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 30px;
   padding: 0;
 }
@@ -832,7 +832,6 @@
 
 .gallery-buttons {
   display: flex;
-  justify-content: space-between;
   margin: 0;
   list-style: none;
   padding: 0;
@@ -840,8 +839,9 @@
 
 .gallery-button {
   border: 1px solid #E2E2E2;
+  width: auto;
   padding: 12px 24px;
-  font-size: 17px;
+  font-size: 12px;
   color: #2A2A2A;
   font-family: poppins, sans-serif;
   font-weight: bolder;

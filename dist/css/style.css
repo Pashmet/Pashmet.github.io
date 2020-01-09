@@ -307,6 +307,10 @@
 
 /*full basket modal*/
 @media (min-width: 1200px) {
+  #menu_box {
+    visibility: visible;
+    background-color: #FFFFFF;
+  }
   .menu__btn {
     visibility: hidden;
   }
@@ -390,8 +394,6 @@
   visibility: hidden;
   top: -21px;
   left: -175px;
-  width: 154px;
-  height: 402px;
   text-align: right;
   padding-top: 100px;
   background-color: #363636;

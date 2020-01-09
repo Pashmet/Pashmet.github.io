@@ -1,11 +1,9 @@
 @media (min-width: 1200px) {
-  //#menu_box {
-  //  visibility: visible;
-  //  background-color: #FFFFFF;
-  //  display: inline;
-  //  width: auto;
-  //  height: auto;
-  //}
+  #menu_box {
+    visibility: visible;
+    background-color: #FFFFFF;
+
+  }
   //.menu__item {
   //  color: #2a2a2a;
   //}
@@ -98,8 +96,8 @@
   visibility: hidden;
   top: -21px;
   left: -175px;
-  width: 154px;
-  height: 402px;
+  //width: 154px;
+  //height: 402px;
   text-align: right;
   padding-top: 100px;
   background-color: #363636;

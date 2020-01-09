@@ -1,8 +1,23 @@
-//@media (min-width: 1200px) {
-//.menu-box {
-//  visibility: visible;
-//}
-//}
+@media (min-width: 1200px) {
+  //#menu_box {
+  //  visibility: visible;
+  //  background-color: #FFFFFF;
+  //  display: inline;
+  //  width: auto;
+  //  height: auto;
+  //}
+  //.menu__item {
+  //  color: #2a2a2a;
+  //}
+  //.menu__item:hover {
+  //  background-color: #d58e32;
+  //  color: #FFFFFF;
+  //}
+  .menu__btn {
+    visibility: hidden;
+  }
+}
+
 .top-menu {
   margin: 0 auto;
   //width: 565px;
@@ -88,7 +103,7 @@
   text-align: right;
   padding-top: 100px;
   background-color: #363636;
-  //list-style: none;
+  list-style: none;
 }
 
 .menu__item {

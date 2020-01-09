@@ -191,30 +191,48 @@
     
         <!--        full basket modal-->
     </section>
-    <section class="top-menu d-flex justify-content-between">
+    <section class="top-menu">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-lightMine">
+            <form class="form-inline my-2 my-lg-0 nav__form-inlineMine">
+                <input class="form-control nav__form-controlMine" type="search" placeholder="Search products" aria-label="Search">
+                <a href="#"><i class="fas fa-search"></i></a>
     
-        <div class="top-menu__search-wrapper">
-            <label><input id="usr" name="search" placeholder="Search products..."/></label>
-            <a href="#"><i class="fas fa-search"></i></a>
-        </div>
+            </form>
+    
+            <button class="navbar-toggler nav-togglerMine" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-iconMine"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse nav-collapseMine" id="navbarSupportedContent">
+                <ul class="navbar-nav navbar-nav-Mine">
+                    <li class="nav-item nav-itemMine">
+                        <a href="#" class="nav-linkMine">home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item nav-itemMine">
+                        <a href="#" class="nav-linkMine">slider</a>
+                    </li>
+                    <li class="nav-item nav-itemMine">
+                        <a href="#" class="nav-linkMine">features</a>
+                    </li>
+                    <li class="nav-item nav-itemMine">
+                        <a href="#" class="nav-linkMine">stocks</a>
+                    </li>
+                    <li class="nav-item nav-itemMine">
+                        <a href="#" class="nav-linkMine">products</a>
+                    </li>
+                    <li class="nav-item nav-itemMine">
+                        <a href="#" class="nav-linkMine">gallery</a>
+                    </li>
+                    <li class="nav-item nav-itemMine">
+                        <a href="#" class="nav-linkMine">blog</a>
+                    </li>
+    
+                </ul>
+    
+            </div>
+        </nav>
     
     
-        <div class="top-menu__dropdown">
-            <input id="menu__toggle" type="checkbox"/>
-            <label class="menu__btn" for="menu__toggle">
-                <span></span>
-            </label>
-            <ul class="menu__box" id="menu_box">
-                <li class="d-lg-inline"><a class="menu__item d-lg-inline" href="#">home</a></li>
-                <li class="d-lg-inline"><a class="menu__item d-lg-inline" href="#">slider</a></li>
-                <li class="d-lg-inline"><a class="menu__item d-lg-inline" href="#features">features</a></li>
-                <li class="d-lg-inline"><a class="menu__item d-lg-inline" href="#">stocks</a></li>
-                <li class="d-lg-inline"><a class="menu__item d-lg-inline" href="#">products</a></li>
-                <li class="d-lg-inline"><a class="menu__item d-lg-inline" href="#furniture-gallery">gallery</a></li>
-                <li class="d-lg-inline"><a class="menu__item d-lg-inline" href="#">blog</a></li>
-            </ul>
-    
-        </div>
     </section>
     <section class="top-slider">
         <div id="demo" class="carousel slide" data-ride="carousel">

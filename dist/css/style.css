@@ -426,7 +426,7 @@
     font-weight: bolder;
   }
   .nav-linkMine:hover {
-    border-top: 5px solid #2A2A2A;
+    border-top: 2px solid #2A2A2A;
     color: #FFFFFF;
     background-color: #d58e32;
   }

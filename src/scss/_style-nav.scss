@@ -1,15 +1,17 @@
 .nav {
   display: flex;
-  justify-content: space-between;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  //justify-content: space-between;
   text-align: center;
-  width: 565px;
+  //width: 565px;
   height: 54px;
   background-color: #434343;
   color: #D8D8D8;
   border-top: 2px solid #D8D8D8;
   font-size: 13px;
   font-family: poppins, sans-serif;
-  margin: 0 auto;
+
 
 }
 

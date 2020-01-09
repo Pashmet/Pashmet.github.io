@@ -329,6 +329,10 @@
   outline: none;
 }
 
+.fa-search {
+  color: #2A2A2A;
+}
+
 .nav-togglerMine {
   border: none;
   z-index: 3;
@@ -338,36 +342,44 @@
   outline: none;
 }
 
-.fa-search {
-  color: #2A2A2A;
-}
-
-.toggler-iconMine {
+.icon-bar {
+  width: 29px;
+  height: 3px;
+  background-color: #2a2a2a;
   display: block;
-  position: relative;
-  background-color: #2a2a2a;
-  width: 29px;
-  height: 3px;
+  transition: all 0.2s;
+  margin-top: 4px;
 }
 
-.toggler-iconMine:before {
-  top: 5px;
-  left: 0;
-  content: "";
-  position: absolute;
-  width: 29px;
-  height: 3px;
-  background-color: #2a2a2a;
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
 }
 
-.toggler-iconMine:after {
-  top: -5px;
-  left: 0;
-  content: "";
-  position: absolute;
-  width: 29px;
-  height: 3px;
-  background-color: #2a2a2a;
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
 }
 
 .nav-collapseMine {

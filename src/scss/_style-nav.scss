@@ -1,34 +1,38 @@
 .nav {
-  display: flex;
+
   margin: 0 auto;
-  justify-content: space-evenly;
-  //justify-content: space-between;
-  text-align: center;
-  //width: 565px;
-  height: 54px;
   background-color: #434343;
   color: #D8D8D8;
   border-top: 2px solid #D8D8D8;
   font-size: 13px;
   font-family: poppins, sans-serif;
+}
 
-
+.nav-wrapper {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 54px;
+  background-color: #434343;
+  color: #D8D8D8;
+  font-size: 13px;
+  font-family: poppins, sans-serif;
 }
 
 .nav_menu-left {
   display: flex;
-  padding-left: 35px;
-
 }
 
 .nav_menu-right {
   display: flex;
-  padding-right: 45px;
-
 }
 
-.nav_menu-left--item, .nav_menu-right--item {
-  padding: 15px;
+.nav_menu-left--item {
+  padding-right: 30px;
+}
+.nav_menu-right--item {
+  padding-left: 30px;
 }
 
 .nav_menu-left--item a {
@@ -67,6 +71,7 @@
 .closeMine {
   opacity: 1;
 }
+
 .closeMine:focus {
   outline: none;
 }
@@ -76,6 +81,7 @@
   background-color: #2A2A2A;
   padding: 10px 19px;
 }
+
 .modal-titleMine {
   text-transform: uppercase;
   text-align: left;

@@ -5,6 +5,7 @@
 }
 .navbar-lightMine {
   position: relative;
+  padding: 8px 0;
 }
 .nav__form-inlineMine {
   border: 1px solid #2A2A2A;
@@ -65,7 +66,6 @@
 
 .navbar-toggler.collapsed .top-bar {
   transform: rotate(0);
-
 }
 
 .navbar-toggler.collapsed .middle-bar {
@@ -82,7 +82,7 @@
   text-align: right;
   position: absolute;
   top: 0;
-  right: 28px;
+  right: 16px;
   z-index: 2;
 
 }
@@ -91,6 +91,7 @@
   width: 150px;
   height: 350px;
   padding-top: 80px;
+  padding-right: 5px;
   color: #A7A7A7;
 }
 .nav-itemMine {
@@ -104,8 +105,7 @@
 
 .nav-linkMine {
   color: #B8B8B8;
-  font-family: poppins, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   text-transform: uppercase;
 }
 .nav-linkMine:hover {
@@ -113,13 +113,9 @@
   text-decoration: none;
 
 }
-//ghj,f
 
-//ghj,f
 @media (min-width: 992px) {
-  .nav-collapseMine {
-    text-align: center;
-  }
+
   .navbar-nav-Mine {
     background-color: #FFFFFF;
     width: auto;

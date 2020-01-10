@@ -1,11 +1,12 @@
 .header {
+  background-color: #363636;
+}
+.header-wrapper {
   display: flex;
   margin: 0 auto;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  //width: 565px;
   height: 145px;
-  background-color: #363636;
   color: #D8D8D8;
   font-size: 17px;
   font-family: poppins, sans-serif;
@@ -18,7 +19,9 @@
 .header__contactnumber a:hover {
   color: #D8D8D8;
 }
-
+.fa-mobile-alt {
+  display: none;
+}
 .header__logo {
   margin-top: 40px;
   align-self: start;
@@ -82,9 +85,12 @@
 }
 .close__basketFullMine span{
   background-color: #2A2A2A;
-  padding: 10px 20px;
+  padding: 8px 20px;
   color: #FFFFFF;
   opacity: 2;
+}
+.close__basketFullMine:focus {
+  outline: none;
 }
 .modal-content__basketFullMine {
   border-radius: 0;
@@ -195,3 +201,13 @@
 }
 
 /*full basket modal*/
+@media (min-width: 992px) {
+  .fa-mobile-alt {
+    display: inline-block;
+    padding-right: 8px;
+    font-size: 25px;
+  }
+  .fa-mobile-alt:hover {
+    color: #d58e32;
+  }
+}

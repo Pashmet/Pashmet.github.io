@@ -3,11 +3,7 @@
 }
 
 .nav {
-  display: flex;
   margin: 0 auto;
-  justify-content: space-evenly;
-  text-align: center;
-  height: 54px;
   background-color: #434343;
   color: #D8D8D8;
   border-top: 2px solid #D8D8D8;
@@ -15,18 +11,32 @@
   font-family: poppins, sans-serif;
 }
 
+.nav-wrapper {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 54px;
+  background-color: #434343;
+  color: #D8D8D8;
+  font-size: 13px;
+  font-family: poppins, sans-serif;
+}
+
 .nav_menu-left {
   display: flex;
-  padding-left: 35px;
 }
 
 .nav_menu-right {
   display: flex;
-  padding-right: 45px;
 }
 
-.nav_menu-left--item, .nav_menu-right--item {
-  padding: 15px;
+.nav_menu-left--item {
+  padding-right: 30px;
+}
+
+.nav_menu-right--item {
+  padding-left: 30px;
 }
 
 .nav_menu-left--item a {
@@ -102,12 +112,15 @@
 
 /*register-modal and login-modal*/
 .header {
+  background-color: #363636;
+}
+
+.header-wrapper {
   display: flex;
   margin: 0 auto;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   height: 145px;
-  background-color: #363636;
   color: #D8D8D8;
   font-size: 17px;
   font-family: poppins, sans-serif;
@@ -119,6 +132,10 @@
 
 .header__contactnumber a:hover {
   color: #D8D8D8;
+}
+
+.fa-mobile-alt {
+  display: none;
 }
 
 .header__logo {
@@ -181,9 +198,13 @@
 
 .close__basketFullMine span {
   background-color: #2A2A2A;
-  padding: 10px 20px;
+  padding: 8px 20px;
   color: #FFFFFF;
   opacity: 2;
+}
+
+.close__basketFullMine:focus {
+  outline: none;
 }
 
 .modal-content__basketFullMine {
@@ -305,6 +326,17 @@
 }
 
 /*full basket modal*/
+@media (min-width: 992px) {
+  .fa-mobile-alt {
+    display: inline-block;
+    padding-right: 8px;
+    font-size: 25px;
+  }
+  .fa-mobile-alt:hover {
+    color: #d58e32;
+  }
+}
+
 .top-menu {
   font-family: poppins, sans-serif;
   box-shadow: 0 8px 5px -3px #b0b0b0;
@@ -312,6 +344,7 @@
 
 .navbar-lightMine {
   position: relative;
+  padding: 8px 0;
 }
 
 .nav__form-inlineMine {
@@ -329,6 +362,10 @@
   outline: none;
 }
 
+.fa-search {
+  color: #2A2A2A;
+}
+
 .nav-togglerMine {
   border: none;
   z-index: 3;
@@ -338,43 +375,51 @@
   outline: none;
 }
 
-.fa-search {
-  color: #2A2A2A;
-}
-
-.toggler-iconMine {
+.icon-bar {
+  width: 29px;
+  height: 3px;
+  background-color: #2a2a2a;
   display: block;
-  position: relative;
-  background-color: #2a2a2a;
-  width: 29px;
-  height: 3px;
+  transition: all 0.2s;
+  margin-top: 4px;
 }
 
-.toggler-iconMine:before {
-  top: 5px;
-  left: 0;
-  content: "";
-  position: absolute;
-  width: 29px;
-  height: 3px;
-  background-color: #2a2a2a;
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
 }
 
-.toggler-iconMine:after {
-  top: -5px;
-  left: 0;
-  content: "";
-  position: absolute;
-  width: 29px;
-  height: 3px;
-  background-color: #2a2a2a;
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
 }
 
 .nav-collapseMine {
   text-align: right;
   position: absolute;
   top: 0;
-  right: 28px;
+  right: 16px;
   z-index: 2;
 }
 
@@ -383,6 +428,7 @@
   width: 150px;
   height: 350px;
   padding-top: 80px;
+  padding-right: 5px;
   color: #A7A7A7;
 }
 
@@ -398,8 +444,7 @@
 
 .nav-linkMine {
   color: #B8B8B8;
-  font-family: poppins, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   text-transform: uppercase;
 }
 
@@ -409,9 +454,6 @@
 }
 
 @media (min-width: 992px) {
-  .nav-collapseMine {
-    text-align: center;
-  }
   .navbar-nav-Mine {
     background-color: #FFFFFF;
     width: auto;
@@ -426,7 +468,7 @@
     font-weight: bolder;
   }
   .nav-linkMine:hover {
-    border-top: 5px solid #2A2A2A;
+    border-top: 2px solid #2A2A2A;
     color: #FFFFFF;
     background-color: #d58e32;
   }

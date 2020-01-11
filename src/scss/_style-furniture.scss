@@ -239,7 +239,7 @@ $black: #000000;
 
   }
   &-label{
-    @include font(13px, 500, $dark)
+    @include font(13px, 500, $dark);
     line-height: 13px;
     margin-bottom: 20px;
   }
@@ -255,24 +255,25 @@ $black: #000000;
 }
 
 .filter__color{
+
   &-label{
     position: relative;
     margin-left: 24px;
+    margin-bottom: 12px;
   }
   &-label:before{
     position: absolute;
     left: -24px;
+    top: -2px;
     content: '';
     width: 14px;
     height: 14px;
-    background: #fa5f66;
-    border-radius: 3px;
-   }
+    border-radius: 3px;}
 
   &-label:after{
     position: absolute;
     left: -19px;
-    top: 2px;
+    top: 0;
     content: '';
     width: 4px;
     height: 7px;
@@ -281,4 +282,53 @@ $black: #000000;
     transform: rotate(45deg);
 
   }
+
+  &-checkbox:checked + .filter-label{
+    color: $orange;
+  }
+
+  &-checkbox + .filter-label:after {
+    display: none;
+  }
+  &-checkbox:checked + .filter-label:after {
+    display: block;
+  }
 }
+
+#fRed+.filter-label:before{
+  background: #fa5f66;
+}
+#fBlack+.filter-label:before{
+  background: #454545;
+}
+#fYellow+.filter-label:before{
+  background: #e9e600;
+}
+#fBlue+.filter-label:before{
+  background: #0190d3;
+}
+#fPink+.filter-label:before{
+  background: #f72fe4;
+}
+#fGreen+.filter-label:before{
+  background: #14d400;
+}
+
+//.rangeForm  {
+//  margin: 60px 0 0 0 !important;
+//}
+//
+//.ui-slider .ui-btn-inner {
+//  padding: 4px 0 0 0 !important;
+//}
+//
+//.ui-slider-popup {
+//  position: absolute !important;
+//  width: 64px;
+//  height: 64px;
+//  text-align: center;
+//  font-size: 36px;
+//  padding-top: 14px;
+//  z-index: 100;
+//  opacity: 0.8;
+//}

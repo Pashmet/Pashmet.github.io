@@ -58,8 +58,9 @@
 
 .gallery-indicatorsMine {
   display: flex;
-  justify-content: space-evenly;
-  padding: 0 6px 0 6px;
+  justify-content: space-around;
+  margin-left: 8%;
+  margin-right: 8%;
 }
 
 .gallery-img__min {

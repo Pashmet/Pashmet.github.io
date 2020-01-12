@@ -329,9 +329,7 @@
   opacity: 2;
   padding: 5px;
 }
-.gallery-control-prevMine:hover span {
-  stroke: red; fill: red;
-}
+
 /*CAROUSEL*/
 
 .gallery2Sect {
@@ -367,3 +365,9 @@
 
 }
 
+.tab {
+  display: none;
+}
+.tab.is-active {
+  display: flex;
+}

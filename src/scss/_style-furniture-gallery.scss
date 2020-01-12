@@ -13,7 +13,6 @@
 .gallery-lines {
   display: flex;
   position: relative;
-  justify-content: center;
   margin-bottom: 30px;
   padding: 0;
 }
@@ -24,6 +23,7 @@
   border: 1px solid #E2E2E2;
   list-style: none;
   flex:1;
+  width: auto;
 }
 
 .gallery-buttons {
@@ -59,8 +59,8 @@
 .gallery-indicatorsMine {
   display: flex;
   justify-content: space-around;
-  margin-left: 8%;
-  margin-right: 8%;
+  margin-left: 9%;
+  margin-right: 9%;
 }
 
 .gallery-img__min {
@@ -369,6 +369,6 @@
 .tab {
   display: none;
 }
-.tab.is-active {
+.tab.active {
   display: flex;
 }

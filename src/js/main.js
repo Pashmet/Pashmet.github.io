@@ -64,9 +64,9 @@ let tab = function(){
         function selectTabNav() {
             tabNav.forEach(item => {
                 item.classList.remove
-                ('is-active');
+                ('active');
             });
-            this.classList.add('is-active');
+            this.classList.add('active');
 
             tabName = this.getAttribute
             ('data-tab-name');
@@ -75,9 +75,9 @@ let tab = function(){
             function selectTabContent(tabName) {
                 tabContent.forEach(item => {
                     item.classList.contains(tabName)?
-                        item.classList.add('is-active'):
+                        item.classList.add('active'):
                         item.classList.remove
-                        ('is-active');
+                        ('active');
                 })
             }
         };

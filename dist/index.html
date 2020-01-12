@@ -1187,12 +1187,11 @@
                                                                             <div class="filter__title text-uppercase">
                                                                                 Filter By price
                                                                             </div>
-                                                                            <p>
-                                                                                <label for="amount">Price range:</label>
-                                                                                <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-                                                                            </p>
+                                                                            <div id="filerPrice">
+                                                                                <div class="filer__price-bar">
     
-                                                                            <div id="slider-range"></div>
+                                                                                </div>
+                                                                            </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1273,20 +1272,21 @@
                     <!--    CAROUSEL-->
                     <!--                                <div class="gallery-product">-->
                     <ul class="gallery-lines">
-                        <li class="gallery-line is-active"></li>
+                        <li class="gallery-line active"></li>
                         <li class="gallery-line"></li>
                         <li class="gallery-line"></li>
                         <li class="gallery-line"></li>
                     </ul>
                     <div id="gallery__carousel" class="carousel slide" data-ride="carousel">
                         <ul class="gallery-buttons">
-                            <li class="gallery-button is-active" data-tab-name="tab-1">featured</li>
+                            <li class="gallery-button active" data-tab-name="tab-1">featured</li>
                             <li class="gallery-button" data-tab-name="tab-2">top seller</li>
                             <li class="gallery-button" data-tab-name="tab-3">sale off</li>
                             <li class="gallery-button" data-tab-name="tab-4">top rated</li>
                         </ul>
                         <!-- Indicators -->
-                        <div class="carousel-indicators gallery-indicatorsMine tab is-active tab-1">
+    
+                        <div class="carousel-indicators gallery-indicatorsMine tab tab-1 active">
                             <div class="gallery-img__min img__min1"><img src="img/gallery_featured1_min.png"
                                                                          alt="Here is an image of furniture gallery"
                                                                          data-target="#gallery__carousel" data-slide-to="0"
@@ -1380,6 +1380,7 @@
                         </div>
                         <!-- The slideshow -->
                         <div class="carousel-inner gallery-innerMine">
+    
                             <div class="carousel-item active gallery-itemMine">
                                 <img src="img/gallery_featured1.png" alt="Image for product">
                             </div>
@@ -1394,6 +1395,7 @@
                             </div>
                             <div class="carousel-item gallery-itemMine">
                                 <img src="img/gallery_featured5.png" alt="Image for product">
+    
                             </div>
     
                             <!-- The slideshow -->
@@ -1432,9 +1434,7 @@
                             <!-- Left and right controls -->
                         </div>
     
-    
                     </div>
-                    <!--            </div>-->
                 </div>
                 <div class="d-none d-lg-block col-lg-6">
                     <div class="gallery2Sect">
@@ -1869,7 +1869,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
 
 <script src="js/main.js"></script>
 </body>

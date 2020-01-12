@@ -839,6 +839,36 @@
   transform: translateX(-50%);
 }
 
+.modal-content-custom {
+  border-radius: 0;
+}
+
+.modal-header-custom {
+  border: none;
+}
+
+.modal-header-custom .close-custom {
+  padding: 0;
+}
+
+.modal-body-custom {
+  box-shadow: inset 0 -4px 4px rgba(1, 2, 2, 0.2);
+}
+
+button.close-custom {
+  width: 41px;
+  height: 37px;
+  background-color: #2a2a2a;
+  color: #ffffff;
+  opacity: 1;
+  line-height: 0;
+  display: flex;
+}
+
+.filter__size, .filter__tag, .filter__color, .filter__price, .filter__category {
+  width: 250px;
+}
+
 .filter__title {
   border-bottom: 1px solid #000000;
   padding-bottom: 14px;
@@ -905,31 +935,218 @@
   line-height: 12px;
 }
 
+.filter__price {
+  margin-bottom: 40px;
+}
+
+.price-wrapper {
+  margin-top: 18px;
+}
+
+.filter__price-btn {
+  font-family: poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #ffffff;
+  background-color: #d58e32;
+  padding: 10px 13px;
+  line-height: 12px;
+}
+
+.noUi-horizontal .noUi-handle {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 3px solid #d58e32;
+  background-color: #ffffff;
+}
+
+.noUi-handle:after, .noUi-handle:before {
+  display: none;
+}
+
+.noUi-connects {
+  height: 8px;
+  border-radius: 1px;
+  border-color: #d4d4d4;
+}
+
+.noUi-connect {
+  background-color: #2a2a2a;
+}
+
+.noUi-base {
+  height: 8px;
+  border-radius: 2px;
+}
+
+.noUi-horizontal {
+  height: 8px;
+  border-radius: 1px;
+  border-color: #d4d4d4;
+}
+
+.price-input-wrapper {
+  font-family: poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2a2a2a;
+  width: 114px;
+  border: 1px solid #e1e1e1;
+}
+
+#input-number1, #input-number2 {
+  width: 100%;
+  font-family: poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2a2a2a;
+  margin: 0 5px;
+  outline: none;
+  border: none;
+}
+
 .filter__color-label {
   position: relative;
   margin-left: 24px;
+  margin-bottom: 12px;
 }
 
 .filter__color-label:before {
   position: absolute;
   left: -24px;
+  top: -2px;
   content: '';
   width: 14px;
   height: 14px;
-  background: #fa5f66;
   border-radius: 3px;
 }
 
 .filter__color-label:after {
   position: absolute;
   left: -19px;
-  top: 2px;
+  top: 0;
   content: '';
   width: 4px;
   height: 7px;
   border: solid #ffffff;
   border-width: 0 1px 1px 0;
   transform: rotate(45deg);
+}
+
+.filter__color-checkbox:checked + .filter-label {
+  color: #d58e32;
+}
+
+.filter__color-checkbox + .filter-label:after {
+  display: none;
+}
+
+.filter__color-checkbox:checked + .filter-label:after {
+  display: block;
+}
+
+#fRed + .filter-label:before {
+  background: #fa5f66;
+}
+
+#fBlack + .filter-label:before {
+  background: #454545;
+}
+
+#fYellow + .filter-label:before {
+  background: #e9e600;
+}
+
+#fBlue + .filter-label:before {
+  background: #0190d3;
+}
+
+#fPink + .filter-label:before {
+  background: #f72fe4;
+}
+
+#fGreen + .filter-label:before {
+  background: #14d400;
+}
+
+.filter__size-item {
+  position: relative;
+}
+
+.filter__size-label {
+  position: relative;
+  margin-left: 24px;
+  margin-bottom: 12px;
+}
+
+.filter__size-label:before {
+  position: absolute;
+  left: -24px;
+  top: -2px;
+  content: '';
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  border: 1px solid #2a2a2a;
+}
+
+.filter__size-label:after {
+  position: absolute;
+  left: -20px;
+  bottom: 5px;
+  content: '';
+  width: 5px;
+  height: 8px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.filter__size-checkbox:checked + .filter-label {
+  color: #d58e32;
+}
+
+.filter__size-checkbox:checked ~ .size-labelAmount {
+  background-color: #d58e32;
+}
+
+.filter__size-checkbox:checked + .filter-label:before {
+  border: 1px solid #d58e32;
+  background-color: #d58e32;
+}
+
+.filter__size-checkbox + .filter-label:after {
+  display: none;
+}
+
+.filter__size-checkbox:checked + .filter-label:after {
+  display: block;
+}
+
+.size-labelAmount {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: #2a2a2a;
+  color: #ffffff;
+  position: absolute;
+  right: 0;
+}
+
+.filter__tag-label {
+  font-family: poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #959595;
+  border: 1px solid #959595;
+  padding: 10px 11px;
+  margin-right: 16px;
+}
+
+.filter__tag-checkbox:checked + .filter-label {
+  color: #d58e32;
+  border: 1px solid #d58e32;
 }
 
 .gallery {

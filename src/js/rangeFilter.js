@@ -93,9 +93,13 @@ document.addEventListener("DOMContentLoaded", CreateSlider);
 const $filtersHtml =$('#filters').html();
 
 function windowSize(){
+    console.log($(window).width());
+    $('#colFilters .container').remove();
+    $('#filters .container').remove();
     if ($(window).width() <= '991'){
         $('#filters .container').remove();
         $('#filters').append($filtersHtml);
+
     } else {
         $('#colFilters .container').remove();
         $('#colFilters').append($filtersHtml);
@@ -106,5 +110,5 @@ $(window).on('load resize',windowSize);
 
 // $('#filters').remove();
 // $('#colFilters').append($filtersHtml);
-console.log($filtersHtml);
+console.log($(window).width());
 

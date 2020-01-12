@@ -48,6 +48,41 @@ document.getElementById("basketInGallery").onclick = function () {
 };
 
 // 0/1 basket
+
+
+
+
+// tabs
+let tab = function(){
+    let tabNav = document.querySelectorAll('.gallery-button'),
+    tabContent = document.querySelectorAll('.tab'),
+    tabName;
+
+    tabNav.forEach(item => {
+        item.addEventListener('click', selectTabNav)
+    });
+        function selectTabNav() {
+            tabNav.forEach(item => {
+                item.classList.remove
+                ('active');
+            });
+            this.classList.add('active');
+
+            tabName = this.getAttribute
+            ('data-tab-name');
+            selectTabContent(tabName);
+        }
+            function selectTabContent(tabName) {
+                tabContent.forEach(item => {
+                    item.classList.contains(tabName)?
+                        item.classList.add('active'):
+                        item.classList.remove
+                        ('active');
+                })
+            }
+        };
+tab();
+// tabs
 document.addEventListener("DOMContentLoaded", CreateSlider);
  window.addEventListener('resize',CreateSlider);
 
@@ -143,9 +178,13 @@ document.addEventListener("DOMContentLoaded", CreateSlider);
 const $filtersHtml =$('#filters').html();
 
 function windowSize(){
+    console.log($(window).width());
+    $('#colFilters .container').remove();
+    $('#filters .container').remove();
     if ($(window).width() <= '991'){
         $('#filters .container').remove();
         $('#filters').append($filtersHtml);
+
     } else {
         $('#colFilters .container').remove();
         $('#colFilters').append($filtersHtml);
@@ -156,39 +195,5 @@ $(window).on('load resize',windowSize);
 
 // $('#filters').remove();
 // $('#colFilters').append($filtersHtml);
-console.log($filtersHtml);
+console.log($(window).width());
 
-
-
-
-// tabs
-let tab = function(){
-    let tabNav = document.querySelectorAll('.gallery-button'),
-    tabContent = document.querySelectorAll('.tab'),
-    tabName;
-
-    tabNav.forEach(item => {
-        item.addEventListener('click', selectTabNav)
-    });
-        function selectTabNav() {
-            tabNav.forEach(item => {
-                item.classList.remove
-                ('active');
-            });
-            this.classList.add('active');
-
-            tabName = this.getAttribute
-            ('data-tab-name');
-            selectTabContent(tabName);
-        }
-            function selectTabContent(tabName) {
-                tabContent.forEach(item => {
-                    item.classList.contains(tabName)?
-                        item.classList.add('active'):
-                        item.classList.remove
-                        ('active');
-                })
-            }
-        };
-tab();
-// tabs

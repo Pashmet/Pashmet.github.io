@@ -48,4 +48,3 @@ document.getElementById("basketInGallery").onclick = function () {
 };
 
 // 0/1 basket
-

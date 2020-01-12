@@ -82,11 +82,11 @@
   text-align: right;
   position: absolute;
   top: 0;
-  right: 16px;
+  right: 0;
   z-index: 2;
 
 }
-.navbar-nav-Mine {
+.navbar-navMine {
   background-color: #363636;
   width: 150px;
   height: 350px;
@@ -107,6 +107,7 @@
   color: #B8B8B8;
   font-size: 14px;
   text-transform: uppercase;
+
 }
 .nav-linkMine:hover {
   color: #d58e32;
@@ -116,7 +117,7 @@
 
 @media (min-width: 992px) {
 
-  .navbar-nav-Mine {
+  .navbar-navMine {
     background-color: #FFFFFF;
     width: auto;
     height: auto;
@@ -124,10 +125,9 @@
     color: #A7A7A7;
 
   }
-
   .nav-linkMine {
     color: #2A2A2A;
-    padding: 24px 20px;
+    padding: 24px 16px;
     text-transform: uppercase;
     font-weight: bolder;
   }

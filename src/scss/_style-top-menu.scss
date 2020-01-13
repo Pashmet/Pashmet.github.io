@@ -3,22 +3,27 @@
   font-family: poppins, sans-serif;
   box-shadow: 0 8px 5px -3px #b0b0b0;
 }
+
 .navbar-lightMine {
   position: relative;
   padding: 8px 0;
 }
+
 .nav__form-inlineMine {
   border: 1px solid #2A2A2A;
   padding: 5px 15px;
   margin: 0 100px 0 0;
 }
+
 .nav__form-controlMine {
   border: none;
   width: auto;
 }
+
 .nav__form-controlMine:hover {
   outline: none;
 }
+
 .fa-search {
   color: #2A2A2A;
 }
@@ -29,6 +34,7 @@
   border: none;
   z-index: 3;
 }
+
 .nav-togglerMine:focus {
   outline: none;
 }
@@ -75,6 +81,7 @@
 .navbar-toggler.collapsed .bottom-bar {
   transform: rotate(0);
 }
+
 //TogglerAnimation
 
 
@@ -86,6 +93,7 @@
   z-index: 2;
 
 }
+
 .navbar-navMine {
   background-color: #363636;
   width: 150px;
@@ -94,9 +102,11 @@
   padding-right: 5px;
   color: #A7A7A7;
 }
+
 .nav-itemMine {
   padding: 5px 0;
 }
+
 .nav-itemMine:hover {
   color: #D58E32;
   text-decoration: none;
@@ -109,6 +119,7 @@
   text-transform: uppercase;
 
 }
+
 .nav-linkMine:hover {
   color: #d58e32;
   text-decoration: none;

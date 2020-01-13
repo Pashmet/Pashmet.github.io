@@ -59,8 +59,10 @@
 .gallery-indicatorsMine {
   display: flex;
   justify-content: space-around;
-  margin-left: 9%;
-  margin-right: 9%;
+  margin-left: 7%;
+  margin-right: 7%;
+  border-bottom: 1px solid #CCCCCC;
+  background-color: #fff;
 }
 
 .gallery-img__min {
@@ -69,6 +71,7 @@
   margin-left: 2px;
   margin-right: 2px;
   opacity: 0.5;
+  border: 1px solid #CCCCCC;
 }
 
 .gallery-innerMine {
@@ -83,6 +86,7 @@
 .gallery-itemMine {
   width: auto;
   height: 328px;
+    left: 10px;
   padding: 10px 10px 20px 60px;
 }
 
@@ -324,7 +328,7 @@
 /*PRICE AND RATING CHANGE*/
 /*CAROUSEL*/
 .gallery-control-prevMine, .gallery-control-nextMine {
-  top: 370px;
+  top: 367px;
   width: 7%;
   background-color: #2A2A2A;
   opacity: 2;
@@ -372,3 +376,18 @@
 .tab.active {
   display: flex;
 }
+
+@media (min-width: 768px) {
+  .gallery-circle {
+    left: 370px;
+  }
+  .gallery-rectangle {
+    left: 450px;
+  }}
+@media (min-width: 992px) {
+  .gallery-circle {
+    left: 210px;
+  }
+  .gallery-rectangle {
+    left: 290px;
+  }}

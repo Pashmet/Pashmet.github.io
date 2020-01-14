@@ -1,0 +1,18 @@
+@mixin font($f-size,$f-weight,$color) {
+  font-family: poppins, sans-serif;
+  font-size: $f-size;
+  font-weight: $f-weight;
+  color: $color;
+}
+
+$orange: #d58e32;
+$dark: #2a2a2a;
+$white: #ffffff;
+$black: #000000;
+
+
+.details{
+  &__img-img{
+    width: 100%;
+  }
+}

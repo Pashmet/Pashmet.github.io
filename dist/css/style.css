@@ -2,6 +2,10 @@
   margin: 0 auto;
 }
 
+.details__img-img {
+  width: 100%;
+}
+
 .nav {
   margin: 0 auto;
   background-color: #434343;

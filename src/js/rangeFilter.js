@@ -1,8 +1,8 @@
-document.addEventListener("DOMContentLoaded", CreateSlider);
- window.addEventListener('resize',CreateSlider);
+ document.addEventListener("DOMContentLoaded",CreateSlider);
+
+ // window.addEventListener('resize',CreateSlider);
 
  function CreateSlider() {
-
 
     const priceSlider = document.getElementById('priceSlider');
 
@@ -106,7 +106,8 @@ function windowSize(){
     }
 }
 
-$(window).on('load resize',windowSize);
+$(window).on('load resize',windowSize)
+    .on('load', CreateSlider);
 
 // $('#filters').remove();
 // $('#colFilters').append($filtersHtml);

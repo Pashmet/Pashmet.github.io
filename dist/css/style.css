@@ -6,6 +6,177 @@
   width: 100%;
 }
 
+.details__description-header {
+  border-bottom: 1px  solid #d3d3d3;
+  padding-bottom: 18px;
+}
+
+.details__description-title {
+  font-family: poppins, sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: #2a2a2a;
+}
+
+.details__description-review {
+  font-family: poppins, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #676767;
+  margin-left: 12px;
+}
+
+.details__price {
+  border-bottom: 1px  solid #d3d3d3;
+  padding: 22px 0;
+}
+
+.details__price-old {
+  font-family: poppins, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: #939393;
+  text-decoration: line-through;
+}
+
+.details__price-new {
+  font-family: poppins, sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #2a2a2a;
+  padding: 7px 10px;
+  margin-left: 13px;
+  line-height: 22px;
+}
+
+.details__text-wrapper {
+  padding: 22px 0;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.details__addCart {
+  background-color: #d58e32;
+  font-family: poppins, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 9px;
+  line-height: 16px;
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+.details__cart-icon {
+  font-size: 16px;
+  margin-right: 9px;
+}
+
+.details__heart {
+  padding: 9px;
+  border: 1px solid #2a2a2a;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.details__addCartHeartWrapper {
+  margin-bottom: 22px;
+}
+
+.details__text-title {
+  font-family: poppins, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #2a2a2a;
+  margin-bottom: 14px;
+  line-height: 14px;
+}
+
+.details__text-text {
+  font-family: poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #676767;
+  line-height: 20px;
+}
+
+.details__available {
+  padding-top: 24px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.details__available-label {
+  font-family: poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2a2a2a;
+  display: inline-block;
+}
+
+.details__available-label:first-child {
+  margin-bottom: 20px;
+}
+
+.details__available-text {
+  font-family: poppins, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #676767;
+  margin-left: 15px;
+}
+
+.details__links-link {
+  font-family: poppins, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #888888;
+  border: 1px solid #000000;
+  padding: 9px;
+  line-height: 16px;
+  margin-right: 6px;
+}
+
+.details__links-link:last-child {
+  margin-right: 0;
+}
+
+.details__links-link .fab {
+  font-size: 16px;
+  margin-right: 7px;
+}
+
+.details__links-link:hover {
+  background-color: #3b5998;
+  border-color: #3b5998;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.details__links-link:hover .fab {
+  color: #ffffff;
+}
+
+.details__links-link .fa-facebook-f {
+  color: #3b5998;
+}
+
+.details__links-link .fa-google-plus-g {
+  color: #e06157;
+}
+
+.details__links-link .fa-twitter {
+  color: #4099ff;
+}
+
+.details__links-link .fa-pinterest-p {
+  color: #c92228;
+}
+
+.details__links-link .fa-linkedin-in {
+  color: #0077b5;
+}
+
 .nav {
   margin: 0 auto;
   background-color: #434343;

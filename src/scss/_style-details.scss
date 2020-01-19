@@ -15,4 +15,124 @@ $black: #000000;
   &__img-img{
     width: 100%;
   }
+  &__description {
+    &-header{
+      border-bottom: 1px  solid #d3d3d3;
+      padding-bottom: 18px;
+    }
+    &-title {
+      @include font(22px, 500, $dark)
+    }
+
+    &-review {
+      @include font(12px, 400, #676767);
+      margin-left: 12px;
+    }
+  }
+&__price{
+  border-bottom: 1px  solid #d3d3d3;
+  padding:  22px 0;
 }
+  &__price-old{
+    @include font(20px, 300,#939393);
+    text-decoration: line-through;
+  }
+  &__price-new{
+    @include font(22px, 500,$white);
+    background-color: $dark;
+    padding: 7px 10px;
+    margin-left: 13px;
+    line-height: 22px;
+  }
+  &__text-wrapper{
+    padding: 22px 0;
+    border-bottom: 1px solid #d3d3d3;
+  }
+  &__addCart{
+    background-color: $orange;
+    @include font(13px, 500, $white);
+    padding: 9px;
+    line-height: 16px;
+    margin-right: 7px;
+    cursor: pointer;
+  }
+  &__cart-icon{
+    font-size: 16px;
+    margin-right: 9px;
+  }
+  &__heart{
+    padding: 9px;
+    border: 1px solid $dark;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  &__addCartHeartWrapper{
+    margin-bottom: 22px;
+  }
+  &__text-title{
+    @include font(15px, 500, $dark);
+    margin-bottom: 14px;
+    line-height: 14px;
+  }
+  &__text-text{
+    @include font(14px, 400, #676767);
+    line-height: 20px;
+  }
+  &__available{
+    padding-top: 24px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #d3d3d3;
+    &-label{
+      @include font(14px, 500, $dark);
+display: inline-block;
+      &:first-child{
+        margin-bottom: 20px;
+      }
+    }
+    &-text{
+      @include font(13px,400,#676767);
+      margin-left: 15px;
+
+    }
+  }
+&__links-link{
+  @include font(13px,400,#888888);
+  border: 1px solid $black;
+  padding: 9px;
+  line-height: 16px;
+  margin-right: 6px;
+  &:last-child{
+    margin-right: 0;
+  }
+  & .fab{
+    font-size: 16px;
+    margin-right: 7px;
+  }
+  &:hover{
+    background-color:#3b5998 ;
+    border-color:#3b5998 ;
+    color: $white;
+    text-decoration: none;
+    & .fab{
+      color: $white;
+    }
+  }
+  & .fa-facebook-f{
+     color: #3b5998;
+   }
+  & .fa-google-plus-g{
+    color: #e06157;
+  }
+  & .fa-twitter{
+    color: #4099ff;
+  }
+ & .fa-pinterest-p{
+    color: #c92228;
+  }
+& .fa-linkedin-in{
+    color:#0077b5;
+  }
+
+}
+}
+

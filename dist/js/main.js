@@ -94,6 +94,7 @@ tab();
 // tabs
 
 
+
  document.addEventListener("DOMContentLoaded",CreateSlider);
 
  // window.addEventListener('resize',CreateSlider);

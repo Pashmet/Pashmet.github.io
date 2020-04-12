@@ -289,6 +289,14 @@ html {
   border: none;
 }
 
+#logModal {
+  margin: 200px auto;
+}
+
+#regModal {
+  margin: 160px auto;
+}
+
 /*register-modal and login-modal*/
 .header {
   background-color: #363636;

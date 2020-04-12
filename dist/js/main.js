@@ -94,6 +94,18 @@ tab();
 // tabs
 
 
+
+
+// пыталась делать плавный скролл к секции, но не вышло. оставляю этот код пока здесь
+// $(document).ready(function(){
+//     $("#furniture-gallery").on("click","a", function (event) {
+//         event.preventDefault();
+//         let id = $(this).attr('href'),
+//             top = $(id).offset().top;
+//         $('body,html').animate({scrollTop: top}, 1500);
+//     });
+// });
+// пыталась делать плавный скролл к секции, но не вышло. оставляю это пока здесь
  document.addEventListener("DOMContentLoaded",CreateSlider);
 
  // window.addEventListener('resize',CreateSlider);

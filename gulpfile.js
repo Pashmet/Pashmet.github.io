@@ -63,4 +63,4 @@ gulp.task('sync', function () { //сервер сам перегружает с�
     })
 });
 
-gulp.task('default', gulp.parallel('sync', 'watch'));
+gulp.task('default', gulp.parallel('js','html','scss','sync', 'watch'));

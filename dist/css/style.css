@@ -11,14 +11,14 @@ html {
 }
 
 .details__description-header {
-  border-bottom: 1px  solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
   padding-bottom: 18px;
 }
 
 .details__description-title {
   font-family: poppins, sans-serif;
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 700;
   color: #2a2a2a;
 }
 
@@ -31,7 +31,7 @@ html {
 }
 
 .details__price {
-  border-bottom: 1px  solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
   padding: 22px 0;
 }
 
@@ -90,7 +90,7 @@ html {
 .details__text-title {
   font-family: poppins, sans-serif;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 700;
   color: #2a2a2a;
   margin-bottom: 14px;
   line-height: 14px;
@@ -101,7 +101,7 @@ html {
   font-size: 14px;
   font-weight: 400;
   color: #676767;
-  line-height: 20px;
+  line-height: 25px;
 }
 
 .details__available {
@@ -113,7 +113,7 @@ html {
 .details__available-label {
   font-family: poppins, sans-serif;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 700;
   color: #2a2a2a;
   display: inline-block;
 }
@@ -128,6 +128,11 @@ html {
   font-weight: 400;
   color: #676767;
   margin-left: 15px;
+}
+
+.details__links {
+  padding-top: 27px;
+  margin-bottom: 51px;
 }
 
 .details__links-link {
@@ -179,6 +184,18 @@ html {
 
 .details__links-link .fa-linkedin-in {
   color: #0077b5;
+}
+
+@media (min-width: 430px) and (max-with: 600px) {
+  .modal-dialog {
+    min-width: 427px;
+  }
+}
+
+@media (min-width: 601px) and (max-with: 1150px) {
+  .modal-dialog {
+    min-width: 757px;
+  }
 }
 
 .nav {

@@ -10,7 +10,9 @@ $dark: #2a2a2a;
 $white: #ffffff;
 $black: #000000;
 
-
+.furniture__item__load{
+  display: none;
+}
 .furniture__sale,
 .furniture__qView,
 .furniture__addCart {
@@ -173,7 +175,18 @@ $black: #000000;
       text-decoration: none;
       color: $orange;
     }
+   
   }
+}
+
+// .loadMore__fa:hover{
+//   transform: rotate(360deg);
+//   transition: transform 1s;
+//   // box-shadow: none;
+// }
+.rotate{
+  transform: rotate(1800deg);
+  transition: transform 4s linear;
 }
 
 .furniture__stars {

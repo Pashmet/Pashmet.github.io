@@ -81,10 +81,11 @@ $black: #000000;
     padding-top: 24px;
     padding-bottom: 18px;
     border-bottom: 1px solid #d3d3d3;
-    &-item{
+    &-item {
       display: inline-block;
+      margin-right: 12px;
     }
-    
+
     &-label {
       @include font(14px, 700, $dark);
       display: inline-block;
@@ -99,7 +100,8 @@ $black: #000000;
   }
   &__links {
     padding-top: 27px;
-    margin-bottom: 51px;
+    margin-bottom: 17px;
+    text-align: center;
   }
 
   &__links-link {
@@ -108,6 +110,9 @@ $black: #000000;
     padding: 9px;
     line-height: 16px;
     margin-right: 6px;
+    margin-bottom: 18px;
+    display: inline-block;
+
     &:last-child {
       margin-right: 0;
     }
@@ -160,15 +165,14 @@ button.close-custom-details {
   .details-modal {
     max-width: 427px;
     margin: 1rem auto;
-
   }
 
   .modal-header-custom .close-custom-details {
     margin-top: 26px;
   }
 
-  .details__img-wrapper{
-    margin: 26px 76px 22px 86px;
+  .details__img-wrapper {
+    margin: 10px 46px 22px 56px;
   }
 }
 @media (min-width: 768px) {
@@ -176,14 +180,52 @@ button.close-custom-details {
     max-width: 757px;
     margin: 2rem auto;
   }
+  .modal-header-custom .close-custom-details {
+    margin-top: 0;
+  }
+  .details-modal .modal-header-custom {
+    padding: 0 1rem;
+  }
+
+  .details {
+    &__text-wrapper {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    &__available {
+      border-bottom: none;
+      padding-bottom: 11px;
+    }
+    &__links {
+      border-top: 1px solid #d3d3d3;
+    }
+    &__img-wrapper {
+      margin: 0;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
-  .details-modal {
-    max-width: 1146px;
-    margin: 2.5rem auto;
-  }
-  .details__available-item{
-    display: block;
+  .details {
+    &-modal {
+      max-width: 1146px;
+      margin: 2.5rem auto;
+    }
+    &__available-item {
+      display: block;
+    }
+    
+    
+    &__text-wrapper {
+      border-bottom: 1px solid #d3d3d3;
+      padding-bottom: 22px;
+    }
+    &__available {
+      padding-bottom: 11px;
+    }
+    &__links {
+      border-top: 1px solid #d3d3d3;
+      text-align: left;
+    }
   }
 }

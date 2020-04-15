@@ -81,6 +81,10 @@ $black: #000000;
     padding-top: 24px;
     padding-bottom: 18px;
     border-bottom: 1px solid #d3d3d3;
+    &-item{
+      display: inline-block;
+    }
+    
     &-label {
       @include font(14px, 700, $dark);
       display: inline-block;
@@ -178,5 +182,8 @@ button.close-custom-details {
   .details-modal {
     max-width: 1146px;
     margin: 2.5rem auto;
+  }
+  .details__available-item{
+    display: block;
   }
 }

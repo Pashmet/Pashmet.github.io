@@ -14,8 +14,5 @@ $('.gallery-eye').on('click', function () {
     .children('.active')
     .children().attr('src');
 $('.details__img-img').attr('src', $srcImg);
-console.log($('.details__img-img').attr('src'));
-console.log($(this).parent().children('.active').children().attr('src'));
 });
-// console.log($('.details__img-img').attr('src'));
-// console.log($srcImg)
+

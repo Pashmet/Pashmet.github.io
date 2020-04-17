@@ -1,3 +1,30 @@
+// $('#basketButton').on('click', function () {
+    
+    
+    
+    
+//     let $srcImg = $(this).prev().attr('src');
+// $('.details__img-img').attr('src', $srcImg);
+// });
+
+// *furniture-galery get src img
+
+$('.gallery-basket').on('click', function () {
+    let $srcImg = $(this)
+    .parent()
+    .children('.active')
+    .children().attr('src');
+    localStorage.setItem('item', $srcImg)
+});
+
+$('#basketButton').on('click', function () {
+    let $srcImg = localStorage.getItem('item');
+    $('.cartImg').attr('src', $srcImg)
+});
+
+
+// const $cartIemBlock =$('.cart-item-block').html();
+
 // *furniture
 
 $('.furniture__qView').on('click', function () {
@@ -14,11 +41,9 @@ $('.gallery-eye').on('click', function () {
     .children('.active')
     .children().attr('src');
 $('.details__img-img').attr('src', $srcImg);
-console.log($('.details__img-img').attr('src'));
-console.log($(this).parent().children('.active').children().attr('src'));
 });
-// console.log($('.details__img-img').attr('src'));
-// console.log($srcImg)
+
+
 $(document).ready(loadFirstsItems);
 
 function loadFirstsItems() {
@@ -237,7 +262,7 @@ tab();
 const $filtersHtml =$('#filters').html();
 
 function windowSize(){
-    console.log($(window).width());
+    // console.log($(window).width());
     $('#colFilters .container').remove();
     $('#filters .container').remove();
     if ($(window).width() <= '991'){
@@ -251,9 +276,9 @@ function windowSize(){
 }
 
 $(window).on('load resize',windowSize)
-    .on('load', CreateSlider);
+    .on('load resize', CreateSlider);
 
 // $('#filters').remove();
 // $('#colFilters').append($filtersHtml);
-console.log($(window).width());
+// console.log($(window).width());
 

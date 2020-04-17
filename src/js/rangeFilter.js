@@ -93,7 +93,7 @@
 const $filtersHtml =$('#filters').html();
 
 function windowSize(){
-    console.log($(window).width());
+    // console.log($(window).width());
     $('#colFilters .container').remove();
     $('#filters .container').remove();
     if ($(window).width() <= '991'){
@@ -107,9 +107,9 @@ function windowSize(){
 }
 
 $(window).on('load resize',windowSize)
-    .on('load', CreateSlider);
+    .on('load resize', CreateSlider);
 
 // $('#filters').remove();
 // $('#colFilters').append($filtersHtml);
-console.log($(window).width());
+// console.log($(window).width());
 

@@ -38,8 +38,6 @@ function addToBasket (elemId) {
         // let qty = basketIcon.innerHTML;
         // const newQty = +qty+1;
         // basketIcon.innerHTML = newQty;
-
-
         let qty = basketIcon.innerHTML;
         basketIcon.innerHTML = +qty + 1;
 

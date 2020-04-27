@@ -65,7 +65,7 @@
 }
 
 .modal-headerMine {
-  padding: 12px 0;
+  padding: 0;
   border: none;
 }
 
@@ -80,7 +80,11 @@
 .closeMine span {
   color: #ffffff;
   background-color: #2A2A2A;
-  padding: 10px 19px;
+  // padding: 10px 19px;
+  width: 41px;
+height: 37px;
+display: block;
+line-height: 37px;
 }
 
 .modal-titleMine {

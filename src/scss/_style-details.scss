@@ -146,7 +146,9 @@ $black: #000000;
     }
   }
 }
-
+.close-custom-details:hover{
+color: $white;
+}
 .modal-header-custom .close-custom-details {
   padding: 0;
 }

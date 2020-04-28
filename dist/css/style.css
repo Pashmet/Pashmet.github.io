@@ -521,12 +521,15 @@ button.close-custom-details {
 .sign:hover {
   color: #D58E32;
   border-color: #D58E32;
+  outline: none;
+  user-select: none;
 }
 
 .sign:active {
   color: #D58E32;
   border-color: #D58E32;
   transform: scale(1.05);
+  outline: none;
 }
 
 .modal-body__basketFullMine {

@@ -12,8 +12,18 @@ $(".gallery-basket").on("click", function () {
 // *products get src img
 $(".details__addCart").on("click", function () {
   incrementCart();
-  getPushSrc($(this).parent().parent().parent().parent()
-  .prev().children().children().attr("src"), cartArray);
+  getPushSrc(
+    $(this)
+      .parent()
+      .parent()
+      .parent()
+      .parent()
+      .prev()
+      .children()
+      .children()
+      .attr("src"),
+    cartArray
+  );
 });
 
 // *details get src img
@@ -29,7 +39,8 @@ $("#basketButton").on("click", function () {
 
 function createCart() {
   const $cartIemBlock = $(".modal-body__basketFullMine").html();
-  $(".cart-cross", "#basketFullModal").on("click", function () {
+  // !довернути клік поза модалкою
+  $(".cart-cross, #basketFullModal").on("click", function () {
     $(".cart-item-block:not(:last-child)").remove();
     $(".cart-item-block")
       .removeClass()
@@ -75,6 +86,32 @@ function incrementCart() {
   let basket = document.getElementById("basketButton");
   basket.setAttribute("data-target", "#basketFullModal");
 }
+
+// $('.sign-increase').on('click', increaseItems);
+// $('.sign-reduce').on('click', reduceItems);
+// console.log($('.sign-increase'));
+$(".modal-body__basketFullMine").on("mousedown", ".sign-increase", increaseItems);
+$(".modal-body__basketFullMine").on("mousedown", ".sign-reduce", reduceItems);
+function increaseItems() {
+  let $itemQuantyty = +$(this).siblings(".quantity").text();
+  $itemQuantyty += 1;
+  $(this).siblings(".quantity").text($itemQuantyty);
+  console.log($(this));
+};
+
+function reduceItems() {
+  // let $itemQuantytyEl = +$(this).siblings(".quantity");
+  let $itemQuantyty = +$(this).siblings(".quantity").text();
+  $itemQuantyty -= 1;
+  $(this).siblings(".quantity").text($itemQuantyty);
+};
+// *summ items
+
+// *summ items
+
+// *total summ
+
+// *total summ
 
 // *furniture
 

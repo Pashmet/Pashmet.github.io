@@ -37,15 +37,29 @@ $("#basketButton").on("click", function () {
   setSrcImg($(".cartImg"), cartArray);
 });
 
+function remooveCartItems(){
+  $(".cart-item-block:not(:last-child)").remove();
+  $(".cart-item-block")
+    .removeClass()
+    .addClass("cart-item-block container-fluid");
+}
+function handler(e){
+  let conteiner = $('.modal-content__basketFullMine')
+  if(conteiner.has(e.target).length===0){
+    remooveCartItems()
+    // $(".cart-cross, #basketFullModal").on("click", function () {
+      
+    // }
+    // )
+    // ;
+  }
+};
+
 function createCart() {
   const $cartIemBlock = $(".modal-body__basketFullMine").html();
   // !довернути клік поза модалкою
-  $(".cart-cross, #basketFullModal").on("click", function () {
-    $(".cart-item-block:not(:last-child)").remove();
-    $(".cart-item-block")
-      .removeClass()
-      .addClass("cart-item-block container-fluid");
-  });
+  $(" #basketFullModal").on("click",handler);
+  $(".cart-cross").on("click",remooveCartItems);
 
   let $items = +$("#basket-iconMine").text();
   let delta = 1;
@@ -90,22 +104,46 @@ function incrementCart() {
 // $('.sign-increase').on('click', increaseItems);
 // $('.sign-reduce').on('click', reduceItems);
 // console.log($('.sign-increase'));
-$(".modal-body__basketFullMine").on("mousedown", ".sign-increase", increaseItems);
+$(".modal-body__basketFullMine").on("mousedown", ".sign-increase",increaseItems)
+  // ();
+
+  // $(this).parent().next().children('.basketFullMine__name-newPrice'
+  // ).text(
+  // multiplication($(this).siblings(".quantity").text(),
+  //               $(this).parent().prev().children('.basketFullMine__name-newPrice').text()))
+  //               console.log($(this).parent().prev().children('.basketFullMine__name-newPrice'))
+// });
 $(".modal-body__basketFullMine").on("mousedown", ".sign-reduce", reduceItems);
 function increaseItems() {
-  let $itemQuantyty = +$(this).siblings(".quantity").text();
+  let $this = $(this)
+  let $itemQuantyty = +$this.siblings(".quantity").text();
   $itemQuantyty += 1;
-  $(this).siblings(".quantity").text($itemQuantyty);
-  console.log($(this));
+  $this.siblings(".quantity").text($itemQuantyty);
+  
+
+  $this.parent().next().children('.basketFullMine__sum-num')
+  .text(multiplication($this.siblings(".quantity").text(),
+  $this.parent().parent().prev().children('.basketFullMine__name').children('.basketFullMine__name-newPrice').text()))
+  
 };
 
 function reduceItems() {
-  // let $itemQuantytyEl = +$(this).siblings(".quantity");
-  let $itemQuantyty = +$(this).siblings(".quantity").text();
+  let $this = $(this)
+  let $itemQuantyty = +$this.siblings(".quantity").text();
   $itemQuantyty -= 1;
-  $(this).siblings(".quantity").text($itemQuantyty);
+  $this.siblings(".quantity").text($itemQuantyty);
+
+  $this.parent().next().children('.basketFullMine__sum-num')
+  .text(multiplication($this.siblings(".quantity").text(),
+  $this.parent().parent().prev().children('.basketFullMine__name').children('.basketFullMine__name-newPrice').text()))
 };
 // *summ items
+function multiplication(a,b){
+  let c;
+  c = a*b;
+  return c;
+}
+
 
 // *summ items
 

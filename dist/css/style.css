@@ -558,6 +558,10 @@ button.close-custom-details {
   padding: 0;
 }
 
+.basketFullMine__name-newPrice::before {
+  content: '$';
+}
+
 .basketFullMine__sum {
   font-size: 25px;
   color: #C5C5C5;
@@ -567,6 +571,10 @@ button.close-custom-details {
   color: #2A2A2A;
   font-size: 26px;
   font-weight: bolder;
+}
+
+.basketFullMine__sum-num::before {
+  content: '$';
 }
 
 .basketFullMine-quantity {

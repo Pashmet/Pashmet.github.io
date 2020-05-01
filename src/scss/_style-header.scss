@@ -72,6 +72,7 @@
   font-weight: 700;
   text-align: center;
   line-height: 55px;
+  margin: 18px 73px 38px ;
 }
 
 .modal-bodyEmptyMine p:last-child {
@@ -125,15 +126,6 @@ line-height: 52.71px;
   padding: 20px 55px 30px 15px;
 }
 
-.modal-content__body-footer:hover .btn-right__basketFullMine {
-  // background-color: #D58E32;
-  // color: #FFFFFF;
-}
-
-.modal-content__body-footer:hover .sign {
-  // color: #D58E32;
-  // border-color: #D58E32;
-}
 
 .sign:hover {
   color: #D58E32;
@@ -211,7 +203,11 @@ line-height: 52.71px;
   border: 1px solid #2A2A2A;
   padding: 5px 15px;
 }
-
+.basketFullMine__total{
+  &:before{
+    content:'$'
+  }
+}
 .modal-footer__basketFullMine {
   border: none;
   display: block;
@@ -248,6 +244,7 @@ background-color: #D58E32;
   font-size: 26px;
   color: #2A2A2A;
   padding: 0 0 15px;
+
 }
 
 .fa-chevron__basketFullMine {
@@ -275,8 +272,6 @@ background-color: #D58E32;
 @media (min-width: 430px) {
   .modal-basket {
     max-width: 420px;
-    // margin: auto auto;
-    // border-radius: none;
   }
 
   .modal-header-custom .close-custom-details {
@@ -285,56 +280,26 @@ background-color: #D58E32;
 
   }
 @media (min-width: 768px) {
-  .details-modal {
-    max-width: 757px;
-    margin: 2rem auto;
+  .modal-basket{
+    max-width: 555px;
   }
-  .modal-header-custom .close-custom-details {
-    margin-top: 0;
-  }
-  .details-modal .modal-header-custom {
-    padding: 0 1rem;
-  }
-
-  .details {
-    &__text-wrapper {
-      border-bottom: none;
-      padding-bottom: 0;
-    }
-    &__available {
-      border-bottom: none;
-      padding-bottom: 11px;
-    }
-    &__links {
-      border-top: 1px solid #d3d3d3;
-    }
-    &__img-wrapper {
-      margin: 0;
+  .modal-bodyEmptyMine{
+    margin: 8px 38px 18px;
+    & p{
+margin-bottom: 20px;
     }
   }
+  
 }
 
 @media (min-width: 1200px) {
-  .details {
-    &-modal {
-      max-width: 1146px;
-      margin: 2.5rem auto;
-    }
-    &__available-item {
-      display: block;
-    }
-    
-    
-    &__text-wrapper {
-      border-bottom: 1px solid #d3d3d3;
-      padding-bottom: 22px;
-    }
-    &__available {
-      padding-bottom: 11px;
-    }
-    &__links {
-      border-top: 1px solid #d3d3d3;
-      text-align: left;
+  .modal-basket{
+    max-width: 1140px;
+  }
+  .modal-bodyEmptyMine{
+    margin: 8px 38px 18px;
+    & p{
+margin-bottom: 20px;
     }
   }
 }

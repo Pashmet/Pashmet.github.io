@@ -37,29 +37,28 @@ $("#basketButton").on("click", function () {
   setSrcImg($(".cartImg"), cartArray);
 });
 
-function remooveCartItems(){
+function remooveCartItems() {
   $(".cart-item-block:not(:last-child)").remove();
   $(".cart-item-block")
     .removeClass()
     .addClass("cart-item-block container-fluid");
 }
-function handler(e){
-  let conteiner = $('.modal-content__basketFullMine')
-  if(conteiner.has(e.target).length===0){
-    remooveCartItems()
+function handler(e) {
+  let conteiner = $(".modal-content__basketFullMine");
+  if (conteiner.has(e.target).length === 0) {
+    remooveCartItems();
     // $(".cart-cross, #basketFullModal").on("click", function () {
-      
+
     // }
     // )
     // ;
   }
-};
+}
 
 function createCart() {
   const $cartIemBlock = $(".modal-body__basketFullMine").html();
-  // !довернути клік поза модалкою
-  $(" #basketFullModal").on("click",handler);
-  $(".cart-cross").on("click",remooveCartItems);
+  $(" #basketFullModal").on("click", handler);
+  $(".cart-cross").on("click", remooveCartItems);
 
   let $items = +$("#basket-iconMine").text();
   let delta = 1;
@@ -74,7 +73,8 @@ function createCart() {
     $(".cart-item-block:last").after($cartIemBlock);
   }
   numeringClasses($(".cart-item-block"), "item");
-  console.log("l:" + $(".cart-item-block").length);
+  totslSum($(".basketFullMine__sum-num"), $(".basketFullMine__total"))
+  // console.log("l:" + $(".cart-item-block").length);
 }
 
 function numeringClasses(fragment, clas) {
@@ -104,51 +104,103 @@ function incrementCart() {
 // $('.sign-increase').on('click', increaseItems);
 // $('.sign-reduce').on('click', reduceItems);
 // console.log($('.sign-increase'));
-$(".modal-body__basketFullMine").on("mousedown", ".sign-increase",increaseItems)
-  // ();
+$(".modal-body__basketFullMine").on(
+  "mousedown",
+  ".sign-increase",
+  // function () {
+  //   let $this = $(".sign-increase");
+  //   increaseItems();
+  // }
+  increaseItems
+);
+// $(".modal-body__basketFullMine")
+// .on(
+//   "click",
+// ".sign-increase",
+// totslSum($(".quantity"), $("basketFullMine__total")));
 
-  // $(this).parent().next().children('.basketFullMine__name-newPrice'
-  // ).text(
-  // multiplication($(this).siblings(".quantity").text(),
-  //               $(this).parent().prev().children('.basketFullMine__name-newPrice').text()))
-  //               console.log($(this).parent().prev().children('.basketFullMine__name-newPrice'))
-// });
 $(".modal-body__basketFullMine").on("mousedown", ".sign-reduce", reduceItems);
+
 function increaseItems() {
-  let $this = $(this)
+  let $this = $(this);
   let $itemQuantyty = +$this.siblings(".quantity").text();
   $itemQuantyty += 1;
   $this.siblings(".quantity").text($itemQuantyty);
-  
 
-  $this.parent().next().children('.basketFullMine__sum-num')
-  .text(multiplication($this.siblings(".quantity").text(),
-  $this.parent().parent().prev().children('.basketFullMine__name').children('.basketFullMine__name-newPrice').text()))
-  
-};
-
-function reduceItems() {
-  let $this = $(this)
-  let $itemQuantyty = +$this.siblings(".quantity").text();
-  $itemQuantyty -= 1;
-  $this.siblings(".quantity").text($itemQuantyty);
-
-  $this.parent().next().children('.basketFullMine__sum-num')
-  .text(multiplication($this.siblings(".quantity").text(),
-  $this.parent().parent().prev().children('.basketFullMine__name').children('.basketFullMine__name-newPrice').text()))
-};
-// *summ items
-function multiplication(a,b){
-  let c;
-  c = a*b;
-  return c;
+  $this
+    .parent()
+    .next()
+    .children(".basketFullMine__sum-num")
+    .text(
+      multiplication(
+        $this.siblings(".quantity").text(),
+        $this
+          .parent()
+          .parent()
+          .prev()
+          .children(".basketFullMine__name")
+          .children(".basketFullMine__name-newPrice")
+          .text()
+      )
+    );
+  totslSum($(".basketFullMine__sum-num"), $(".basketFullMine__total"));
 }
 
+function reduceItems() {
+  let $this = $(this);
+  let $itemQuantyty = +$this.siblings(".quantity").text();
+  $itemQuantyty -= 1;
+  if ($itemQuantyty <= 0) {
+    $itemQuantyty += 1;
+    let $items = +$("#basket-iconMine").text();
+    $items -= 1;
+    $("#basket-iconMine").text($items);
+    if (!$items) {
+      remooveCartItems();
+      $("#basketFullModal").modal("hide");
+      let basket = $("#basketButton");
+      basket.attr("data-target", "#basketEmptyModal");
+      cartArray = [];
+    } else {
+      $this.parent().parent().parent().remove();
+    }
+  }
+  $this.siblings(".quantity").text($itemQuantyty);
 
+  $this
+    .parent()
+    .next()
+    .children(".basketFullMine__sum-num")
+    .text(
+      multiplication(
+        $this.siblings(".quantity").text(),
+        $this
+          .parent()
+          .parent()
+          .prev()
+          .children(".basketFullMine__name")
+          .children(".basketFullMine__name-newPrice")
+          .text()
+      )
+    );
+    totslSum($(".basketFullMine__sum-num"), $(".basketFullMine__total"))
+}
+// *summ items
+function multiplication(a, b) {
+  let c;
+  c = a * b;
+  return c;
+}
 // *summ items
 
 // *total summ
-
+function totslSum(elements, sumOut) {
+  let sum = 0;
+  elements.each(function () {
+    sum += parseInt($(this).text());
+  });
+  sumOut.text(sum);
+}
 // *total summ
 
 // *furniture

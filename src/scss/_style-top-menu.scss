@@ -1,5 +1,8 @@
 .top-menu {
-
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: white;
   font-family: poppins, sans-serif;
   box-shadow: 0 8px 5px -3px #b0b0b0;
 }

@@ -8,17 +8,17 @@
   justify-content: space-between;
   align-items: center;
   height: 145px;
-  color: #D8D8D8;
+  color: #d8d8d8;
   font-size: 17px;
   font-family: poppins, sans-serif;
 }
 
 .header__contactnumber a {
-  color: #D8D8D8;
+  color: #d8d8d8;
 }
 
 .header__contactnumber a:hover {
-  color: #D8D8D8;
+  color: #d8d8d8;
 }
 
 .fa-mobile-alt {
@@ -32,7 +32,7 @@
 
 .header__basket-icon {
   padding: 9px 16px 9px 9px;
-  background-color: #D58E32;
+  background-color: #d58e32;
   border-radius: 3px;
   position: relative;
 }
@@ -60,7 +60,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 }
 
 /*basket empty modal*/
@@ -72,16 +72,16 @@
   font-weight: 700;
   text-align: center;
   line-height: 55px;
-  margin: 18px 73px 38px ;
+  margin: 18px 73px 38px;
 }
 
 .modal-bodyEmptyMine p:last-child {
   font-size: 30px;
-font-weight: 300;
-line-height: 52.71px;
+  font-weight: 300;
+  line-height: 52.71px;
   // color: #939393;
 }
-.modal-basket-content{
+.modal-basket-content {
   border-radius: 0;
   box-shadow: 0 4px 4px rgba(1, 2, 2, 0.2);
   border: none;
@@ -89,12 +89,12 @@ line-height: 52.71px;
 
 /*basket empty modal*/
 /*full basket modal*/
-.cart-item-block{
+.cart-item-block {
   border: 1px solid #c4c4c4;
   margin-bottom: 22px;
   border-radius: 3px;
 }
-.cartImg{
+.cartImg {
   width: 100%;
 }
 .close__basketFullMine {
@@ -102,9 +102,9 @@ line-height: 52.71px;
 }
 
 .close__basketFullMine span {
-  background-color: #2A2A2A;
+  background-color: #2a2a2a;
   padding: 8px 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 2;
 }
 
@@ -114,70 +114,67 @@ line-height: 52.71px;
 
 .modal-content__basketFullMine {
   border-radius: 0;
-
 }
 
 .modal-header__basketFullMine {
   border: none;
   padding: 12px 0 0 0;
-
 }
 
 .modal-content__body-footer {
-  padding: 20px 39px 30px 15px;
+  padding: 20px 27px 0px 27px;
 }
 
+.sign {
+  margin-left: 3px;
 
-.sign{
-margin-left: 3px;
-
-&:hover {
-  color: #D58E32;
-  border-color: #D58E32;
-  outline: none;
-  user-select: none;
-  
-}}
+  &:hover {
+    color: #d58e32;
+    border-color: #d58e32;
+    outline: none;
+    user-select: none;
+  }
+}
 .sign:active {
-  color: #D58E32;
-  border-color: #D58E32;
+  color: #d58e32;
+  border-color: #d58e32;
   transform: scale(1.05);
   outline: none;
 }
 
 .modal-body__basketFullMine {
-    padding: 0;
+  padding: 0;
 }
 
 .basketFullMine__name {
-
   font-size: 22px;
   font-weight: bolder;
-  color: #2A2A2A;
+  color: #2a2a2a;
   line-height: 36px;
+  margin-top: 5px;
 }
 
 .basketFullMine__name-oldPrice {
   font-size: 20px;
   font-weight: 300;
-  color: #C5C5C5;
+  color: #c5c5c5;
   text-decoration: line-through;
   line-height: 20px;
   margin-bottom: 8px;
-  margin-top: 12px;
+  margin-top: 8px;
 }
 
 .basketFullMine__name-newPrice {
   font-size: 22px;
-  color: #FFFFFF;
-  background-color: #2A2A2A;
+  color: #ffffff;
+  background-color: #2a2a2a;
   text-align: center;
   display: inline-block;
   font-weight: 700;
-  padding:  7px 9px ;
+  padding: 7px 9px;
   line-height: 20px;
-  &::before{
-    content: '$';
+  &::before {
+    content: "$";
   }
 }
 
@@ -189,41 +186,46 @@ margin-left: 3px;
 }
 
 .basketFullMine__sum-num {
-  color: #2A2A2A;
+  color: #2a2a2a;
   font-size: 22px;
   font-weight: 700;
 
-  &::before{
-    content:'$'
+  &::before {
+    content: "$";
   }
 }
-.wrapper-quantity{
+
+.sumQuantityBlock{
+  margin-top: 32px;
+}
+.wrapper-quantity {
   margin-top: 15px;
 }
+
 .basketFullMine-quantity {
   font-size: 16px;
   font-weight: bolder;
   color: #2a2a2a;
   margin-bottom: 11px;
 }
-.quantityLabel{
+.quantityLabel {
   margin-bottom: 13px;
 }
+
 .quantity {
   display: inline-block;
-  border: 1px solid  #2a2a2a;;
-  padding: 5px 30px;
+  border: 1px solid #2a2a2a;
+  padding: 5.5px 32.5px;
 }
 
 .sign {
   display: inline-block;
-  border: 1px solid #2A2A2A;
-  padding: 5px 15px;
+  border: 1px solid #2a2a2a;
+  padding: 5.5px 15px;
 }
-.basketFullMine__total{
-
-  &:before{
-    content:'$'
+.basketFullMine__total {
+  &:before {
+    content: "$";
   }
 }
 .modal-footer__basketFullMine {
@@ -231,26 +233,25 @@ margin-left: 3px;
   display: block;
   padding: 0;
   position: relative;
-  
+  margin: 0 27px 30px;
 }
 
 .btn-left__basketFullMine {
   padding: 9px 30px 9px 0;
-  
 }
-.btn-right__basketFullMine{
+.btn-right__basketFullMine {
   padding: 8px 30px 8px 0;
 }
-.btn-basket{
+.btn-basket {
   border: none;
   font-size: 13px;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #939393;
   text-transform: uppercase;
   font-weight: 400;
-  &:hover{
-background-color: #D58E32;
-  color: #FFFFFF;
+  &:hover {
+    background-color: #d58e32;
+    color: #ffffff;
   }
 }
 .btn-right__basketFullMine {
@@ -261,9 +262,8 @@ background-color: #D58E32;
 .basketFullMine__total-price {
   text-align: right;
   font-size: 22px;
-  color: #2A2A2A;
-  padding: 0 0 15px;
-
+  color: #2a2a2a;
+  margin-bottom: 7px;
 }
 
 .fa-chevron__basketFullMine {
@@ -298,30 +298,68 @@ background-color: #D58E32;
   .modal-header-custom .close-custom-details {
     margin-top: 26px;
   }
-
-  }
+}
 @media (min-width: 768px) {
-  .modal-basketFull{
+  .modal-basketFull {
     max-width: 750px;
     margin: 1rem auto;
   }
-  .modal-bodyEmptyMine{
+  .modal-bodyEmptyMine {
     margin: 8px 38px 18px;
-    & p{
-margin-bottom: 20px;
+    & p {
+      margin-bottom: 20px;
     }
   }
+  .modal-content__body-footer{
+    padding: 20px 38px 0px 38px;
+  }
   
+  .basketFullMine__name-oldPrice{
+    padding-right: 0;
+  }
+
+  .newOldPrice{
+    margin-top: 20px;
+  }
+  .sumQuantityBlock{
+margin-top: 0;
+margin-bottom: 24px;
+  }
+
+  .quantityLabel{
+    margin-bottom: 0;
+    display: flex;
+  align-items: center;
+  
+  }
+  .sign, .quantity{
+    margin-bottom: 0;
+  }
+  .basketFullMine-quantity{
+    margin-bottom: 0;
+    display: flex;
+  align-items:flex-end;
+  }
 }
 
 @media (min-width: 1200px) {
-  .modal-basket{
+  .modal-basket {
     max-width: 1140px;
   }
-  .modal-bodyEmptyMine{
+  .modal-bodyEmptyMine {
     margin: 8px 38px 18px;
-    & p{
-margin-bottom: 20px;
+    & p {
+      margin-bottom: 20px;
     }
   }
+  .sumQuantityBlock{
+    margin-top: 50px;
+    margin-bottom: 0px;
+      }
+      .newOldPrice{
+        margin-top: 25px;
+      }
+      .basketFullMine__name{
+        margin-top: 15px;
+      }
 }

@@ -333,6 +333,16 @@ button.close-custom-details {
   transition: 1s;
 }
 
+.form-control-custom {
+  border-radius: 0;
+  padding: 14px 18px;
+  background-origin: border-box;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  height: initial;
+}
+
 .modal-contentMine {
   border-radius: 1px;
 }
@@ -371,12 +381,14 @@ button.close-custom-details {
 }
 
 .btn-bottomMine {
-  padding: 10px 20px;
+  padding: 10px 38px;
   color: #ffffff;
   background-color: #2A2A2A;
   text-transform: uppercase;
   justify-content: left;
   border-radius: 3px;
+  border: none;
+  box-shadow: 0 4px 10px rgba(1, 2, 2, 0.2);
 }
 
 .modal-footerMine {
@@ -403,17 +415,17 @@ button.close-custom-details {
   justify-content: space-between;
   align-items: center;
   height: 145px;
-  color: #D8D8D8;
+  color: #d8d8d8;
   font-size: 17px;
   font-family: poppins, sans-serif;
 }
 
 .header__contactnumber a {
-  color: #D8D8D8;
+  color: #d8d8d8;
 }
 
 .header__contactnumber a:hover {
-  color: #D8D8D8;
+  color: #d8d8d8;
 }
 
 .fa-mobile-alt {
@@ -427,7 +439,7 @@ button.close-custom-details {
 
 .header__basket-icon {
   padding: 9px 16px 9px 9px;
-  background-color: #D58E32;
+  background-color: #d58e32;
   border-radius: 3px;
   position: relative;
 }
@@ -497,9 +509,9 @@ button.close-custom-details {
 }
 
 .close__basketFullMine span {
-  background-color: #2A2A2A;
+  background-color: #2a2a2a;
   padding: 8px 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 2;
 }
 
@@ -517,7 +529,7 @@ button.close-custom-details {
 }
 
 .modal-content__body-footer {
-  padding: 20px 39px 30px 15px;
+  padding: 20px 27px 0px 27px;
 }
 
 .sign {
@@ -525,15 +537,15 @@ button.close-custom-details {
 }
 
 .sign:hover {
-  color: #D58E32;
-  border-color: #D58E32;
+  color: #d58e32;
+  border-color: #d58e32;
   outline: none;
   user-select: none;
 }
 
 .sign:active {
-  color: #D58E32;
-  border-color: #D58E32;
+  color: #d58e32;
+  border-color: #d58e32;
   transform: scale(1.05);
   outline: none;
 }
@@ -545,24 +557,25 @@ button.close-custom-details {
 .basketFullMine__name {
   font-size: 22px;
   font-weight: bolder;
-  color: #2A2A2A;
+  color: #2a2a2a;
   line-height: 36px;
+  margin-top: 5px;
 }
 
 .basketFullMine__name-oldPrice {
   font-size: 20px;
   font-weight: 300;
-  color: #C5C5C5;
+  color: #c5c5c5;
   text-decoration: line-through;
   line-height: 20px;
   margin-bottom: 8px;
-  margin-top: 12px;
+  margin-top: 8px;
 }
 
 .basketFullMine__name-newPrice {
   font-size: 22px;
-  color: #FFFFFF;
-  background-color: #2A2A2A;
+  color: #ffffff;
+  background-color: #2a2a2a;
   text-align: center;
   display: inline-block;
   font-weight: 700;
@@ -571,7 +584,7 @@ button.close-custom-details {
 }
 
 .basketFullMine__name-newPrice::before {
-  content: '$';
+  content: "$";
 }
 
 .basketFullMine__sum {
@@ -582,13 +595,17 @@ button.close-custom-details {
 }
 
 .basketFullMine__sum-num {
-  color: #2A2A2A;
+  color: #2a2a2a;
   font-size: 22px;
   font-weight: 700;
 }
 
 .basketFullMine__sum-num::before {
-  content: '$';
+  content: "$";
+}
+
+.sumQuantityBlock {
+  margin-top: 32px;
 }
 
 .wrapper-quantity {
@@ -608,18 +625,18 @@ button.close-custom-details {
 
 .quantity {
   display: inline-block;
-  border: 1px solid  #2a2a2a;
-  padding: 5px 30px;
+  border: 1px solid #2a2a2a;
+  padding: 5.5px 32.5px;
 }
 
 .sign {
   display: inline-block;
-  border: 1px solid #2A2A2A;
-  padding: 5px 15px;
+  border: 1px solid #2a2a2a;
+  padding: 5.5px 15px;
 }
 
 .basketFullMine__total:before {
-  content: '$';
+  content: "$";
 }
 
 .modal-footer__basketFullMine {
@@ -627,6 +644,7 @@ button.close-custom-details {
   display: block;
   padding: 0;
   position: relative;
+  margin: 0 27px 30px;
 }
 
 .btn-left__basketFullMine {
@@ -640,15 +658,15 @@ button.close-custom-details {
 .btn-basket {
   border: none;
   font-size: 13px;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #939393;
   text-transform: uppercase;
   font-weight: 400;
 }
 
 .btn-basket:hover {
-  background-color: #D58E32;
-  color: #FFFFFF;
+  background-color: #d58e32;
+  color: #ffffff;
 }
 
 .btn-right__basketFullMine {
@@ -659,8 +677,8 @@ button.close-custom-details {
 .basketFullMine__total-price {
   text-align: right;
   font-size: 22px;
-  color: #2A2A2A;
-  padding: 0 0 15px;
+  color: #2a2a2a;
+  margin-bottom: 7px;
 }
 
 .fa-chevron__basketFullMine {
@@ -707,6 +725,32 @@ button.close-custom-details {
   .modal-bodyEmptyMine p {
     margin-bottom: 20px;
   }
+  .modal-content__body-footer {
+    padding: 20px 38px 0px 38px;
+  }
+  .basketFullMine__name-oldPrice {
+    padding-right: 0;
+  }
+  .newOldPrice {
+    margin-top: 20px;
+  }
+  .sumQuantityBlock {
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+  .quantityLabel {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+  }
+  .sign, .quantity {
+    margin-bottom: 0;
+  }
+  .basketFullMine-quantity {
+    margin-bottom: 0;
+    display: flex;
+    align-items: flex-end;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -718,6 +762,16 @@ button.close-custom-details {
   }
   .modal-bodyEmptyMine p {
     margin-bottom: 20px;
+  }
+  .sumQuantityBlock {
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+  .newOldPrice {
+    margin-top: 25px;
+  }
+  .basketFullMine__name {
+    margin-top: 15px;
   }
 }
 

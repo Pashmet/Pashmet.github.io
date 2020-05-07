@@ -1,3 +1,6 @@
+$white: #ffffff;
+$dark:#2a2a2a;
+
 .top-menu {
   position: sticky;
   top: 0;
@@ -45,7 +48,7 @@
 .icon-bar {
   width: 29px;
   height: 3px;
-  background-color: #2a2a2a;
+  background-color: $dark;
   display: block;
   transition: all 0.2s;
   margin-top: 4px
@@ -58,9 +61,10 @@
 
 
 .navbar-toggler .top-bar {
-  transform: rotate(45deg);
-  transform-origin: 10% 10%;
-
+  transform: rotate(45deg) translateY(10px);
+  transform-origin: center;
+  background-color: $white;
+  
 }
 
 .navbar-toggler .middle-bar {
@@ -68,13 +72,16 @@
 }
 
 .navbar-toggler .bottom-bar {
-  transform: rotate(-45deg);
-  transform-origin: 10% 90%;
-
+   
+  transform: rotate(-45deg) translateY(-10px);
+  transform-origin: center;
+  background-color: $white;
+  
 }
 
 .navbar-toggler.collapsed .top-bar {
   transform: rotate(0);
+  background-color: $dark;
 }
 
 .navbar-toggler.collapsed .middle-bar {
@@ -83,6 +90,7 @@
 
 .navbar-toggler.collapsed .bottom-bar {
   transform: rotate(0);
+  background-color: $dark;
 }
 
 //TogglerAnimation

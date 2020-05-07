@@ -57,7 +57,7 @@
 
 /*register-modal and login-modal*/
 .modalMine {
-  transition: 1s;
+  transition: 0.2s;
 }
 .form-control-custom{
   border-radius: 0;
@@ -70,6 +70,10 @@ height: initial;
 }
 .modal-contentMine {
   border-radius: 1px;
+  border: none;
+  box-shadow: 0 4px 4px rgba(1, 2, 2, 0.2);
+  width: 421px;
+  margin: auto;
 }
 
 .modal-headerMine {
@@ -100,8 +104,11 @@ line-height: 37px;
   text-align: left;
   color: #2A2A2A;
   font-weight: bolder;
+  font-size: 30px;
 }
-
+.modal-bodyMine{
+padding: 27px 39px 0;
+}
 .form-groupMine {
   border-radius: 0;
 }
@@ -115,11 +122,14 @@ line-height: 37px;
   border-radius: 3px;
 border:none;
 box-shadow: 0 4px 10px rgba(1, 2, 2, 0.2);
+margin: 0;
 }
 
 .modal-footerMine {
   justify-content: flex-start;
   border: none;
+  padding: 0 39px 34px;
+  
 }
 #logModal {
   margin: 200px auto;
@@ -129,3 +139,8 @@ box-shadow: 0 4px 10px rgba(1, 2, 2, 0.2);
   margin: 160px auto;
 }
 /*register-modal and login-modal*/
+@media (min-width: 1200px){
+  .modal-contentMine{
+    min-width: 456px;
+  }
+}

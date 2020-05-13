@@ -162,29 +162,44 @@ function reduceItems() {
       basket.attr("data-target", "#basketEmptyModal");
       cartArray = [];
     } else {
-      $this.parent().parent().parent().remove();
+      $this.parent().parent().parent().parent().parent().parent().parent().parent().remove();
     }
   }
   $this.siblings(".quantity").text($itemQuantyty);
 
   $this
     .parent()
+    .parent()
+    .parent()
     .next()
-    .children(".basketFullMine__sum-num")
+    .find(".basketFullMine__sum-num")
     .text(
       multiplication(
         $this.siblings(".quantity").text(),
         $this
           .parent()
           .parent()
+          .parent()
+          .parent()
+          .parent()
           .prev()
-          .children(".basketFullMine__name")
-          .children(".basketFullMine__name-newPrice")
+          // .children()
+          .find(".basketFullMine__name-newPrice")
           .text()
+
+          
       )
+      
     );
-    totslSum($(".basketFullMine__sum-num"), $(".basketFullMine__total"))
-}
+    totslSum($(".basketFullMine__sum-num"), $(".basketFullMine__total"));
+    console.log($this
+      .parent()
+      .parent()
+      .parent()
+      .next()
+      .find(".basketFullMine__sum-num")
+      )
+  }
 // *summ items
 function multiplication(a, b) {
   let c;

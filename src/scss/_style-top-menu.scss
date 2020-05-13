@@ -1,5 +1,5 @@
 $white: #ffffff;
-$dark:#2a2a2a;
+$dark: #2a2a2a;
 
 .top-menu {
   position: sticky;
@@ -16,7 +16,7 @@ $dark:#2a2a2a;
 }
 
 .nav__form-inlineMine {
-  border: 1px solid #2A2A2A;
+  border: 1px solid #2a2a2a;
   padding: 5px 15px;
   margin: 0 100px 0 0;
 }
@@ -31,9 +31,8 @@ $dark:#2a2a2a;
 }
 
 .fa-search {
-  color: #2A2A2A;
+  color: #2a2a2a;
 }
-
 
 //TogglerAnimation
 .nav-togglerMine {
@@ -51,7 +50,7 @@ $dark:#2a2a2a;
   background-color: $dark;
   display: block;
   transition: all 0.2s;
-  margin-top: 4px
+  margin-top: 4px;
 }
 
 .navbar-toggler {
@@ -59,12 +58,10 @@ $dark:#2a2a2a;
   background: transparent !important;
 }
 
-
 .navbar-toggler .top-bar {
   transform: rotate(45deg) translateY(10px);
   transform-origin: center;
   background-color: $white;
-  
 }
 
 .navbar-toggler .middle-bar {
@@ -72,11 +69,9 @@ $dark:#2a2a2a;
 }
 
 .navbar-toggler .bottom-bar {
-   
   transform: rotate(-45deg) translateY(-10px);
   transform-origin: center;
   background-color: $white;
-  
 }
 
 .navbar-toggler.collapsed .top-bar {
@@ -95,14 +90,12 @@ $dark:#2a2a2a;
 
 //TogglerAnimation
 
-
 .nav-collapseMine {
   text-align: right;
   position: absolute;
   top: 0;
   right: 0;
   z-index: 2;
-
 }
 
 .navbar-navMine {
@@ -111,51 +104,64 @@ $dark:#2a2a2a;
   height: 350px;
   padding-top: 80px;
   padding-right: 5px;
-  color: #A7A7A7;
+  color: #a7a7a7;
+  text-align: right;
+  // box-shadow: 0 4px 4px rgba(1, 2, 2, 0.2);
 }
 
 .nav-itemMine {
   padding: 5px 0;
+  border-bottom: 1px solid #363636;
+ margin-right: 11px;
+  margin-left: 20px;
 }
 
 .nav-itemMine:hover {
-  color: #D58E32;
+  color: $white;
   text-decoration: none;
-  border-top: 1px solid #000000;
+  border-bottom: 1px solid $white;
+& .nav-linkMine{
+  color: $white;
+}
 }
 
 .nav-linkMine {
-  color: #B8B8B8;
+  color: #b8b8b8;
   font-size: 14px;
   text-transform: uppercase;
-
 }
 
 .nav-linkMine:hover {
-  color: #d58e32;
+  color: $white;
   text-decoration: none;
-
+  // border-bottom: 1px solid $white;
 }
 
 @media (min-width: 992px) {
-
   .navbar-navMine {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     width: auto;
     height: auto;
     padding-top: 15px;
-    color: #A7A7A7;
-
+    color: #a7a7a7;
   }
   .nav-linkMine {
-    color: #2A2A2A;
-    padding: 24px 16px;
+    color: #2a2a2a;
+    padding: 20.5px 16px 24px ;
     text-transform: uppercase;
     font-weight: bolder;
+    border-top: 2px solid $white;
   }
+  .nav-itemMine {
+    border-bottom:none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .nav-linkMine:hover {
-    border-top: 2px solid #2A2A2A;
-    color: #FFFFFF;
+    border-top: 2px solid #2a2a2a;
+    color: #ffffff;
     background-color: #d58e32;
+    // border-bottom:none;
   }
 }

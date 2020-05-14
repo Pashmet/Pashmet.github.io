@@ -50,11 +50,16 @@ $black: #000000;
   &__addCart {
     background-color: $orange;
     @include font(13px, 500, $white);
-    padding: 9px;
+    padding: 8px;
     line-height: 16px;
     margin-right: 7px;
     cursor: pointer;
+    border: 1px solid $orange;
+ &:hover{
+  border: 1px solid $white;
+ }
   }
+
   &__cart-icon {
     font-size: 16px;
     margin-right: 9px;

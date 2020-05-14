@@ -128,19 +128,24 @@ function increaseItems() {
   $this.siblings(".quantity").text($itemQuantyty);
 
   $this
-    .parent()
-    .next()
-    .children(".basketFullMine__sum-num")
-    .text(
-      multiplication(
-        $this.siblings(".quantity").text(),
-        $this
-          .parent()
-          .parent()
-          .prev()
-          .children(".basketFullMine__name")
-          .children(".basketFullMine__name-newPrice")
-          .text()
+  .parent()
+  .parent()
+  .parent()
+  .next()
+  .find(".basketFullMine__sum-num")
+  .text(
+    multiplication(
+      $this.siblings(".quantity").text(),
+      $this
+        .parent()
+        .parent()
+        .parent()
+        .parent()
+        .parent()
+        .prev()
+        // .children()
+        .find(".basketFullMine__name-newPrice")
+        .text()
       )
     );
   totslSum($(".basketFullMine__sum-num"), $(".basketFullMine__total"));
@@ -186,8 +191,6 @@ function reduceItems() {
           // .children()
           .find(".basketFullMine__name-newPrice")
           .text()
-
-          
       )
       
     );

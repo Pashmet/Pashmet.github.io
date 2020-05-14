@@ -128,19 +128,24 @@ function increaseItems() {
   $this.siblings(".quantity").text($itemQuantyty);
 
   $this
-    .parent()
-    .next()
-    .children(".basketFullMine__sum-num")
-    .text(
-      multiplication(
-        $this.siblings(".quantity").text(),
-        $this
-          .parent()
-          .parent()
-          .prev()
-          .children(".basketFullMine__name")
-          .children(".basketFullMine__name-newPrice")
-          .text()
+  .parent()
+  .parent()
+  .parent()
+  .next()
+  .find(".basketFullMine__sum-num")
+  .text(
+    multiplication(
+      $this.siblings(".quantity").text(),
+      $this
+        .parent()
+        .parent()
+        .parent()
+        .parent()
+        .parent()
+        .prev()
+        // .children()
+        .find(".basketFullMine__name-newPrice")
+        .text()
       )
     );
   totslSum($(".basketFullMine__sum-num"), $(".basketFullMine__total"));
@@ -186,8 +191,6 @@ function reduceItems() {
           // .children()
           .find(".basketFullMine__name-newPrice")
           .text()
-
-          
       )
       
     );
@@ -358,6 +361,16 @@ tab();
 //     });
 // });
 // пыталась делать плавный скролл к секции, но не вышло. оставляю это пока здесь
+$(".blog__link").on("click", function(event)
+{
+    return false;
+});
+
+
+$(".furniture__item").on("click", function(event)
+{
+    return false;
+})
  document.addEventListener("DOMContentLoaded",CreateSlider);
 
  // window.addEventListener('resize',CreateSlider);
@@ -473,3 +486,15 @@ $(window).on('load resize',windowSize)
 // $('#colFilters').append($filtersHtml);
 // console.log($(window).width());
 
+
+function togleTopMenu(){
+    if ($(window).width() <= '991'){
+$("#navbarSupportedContent .nav-linkMine").on("click", function(){
+    $("#navbarSupportedContent")
+    .removeClass("show");
+    $(".nav-togglerMine").addClass('collapsed')
+})
+}
+}
+$(window).on('load resize',togleTopMenu);
+   

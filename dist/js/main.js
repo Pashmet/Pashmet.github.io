@@ -367,10 +367,10 @@ $(".blog__link").on("click", function(event)
 });
 
 
-//$(".furniture__item").on("click", function(event)
-//{
-  //  return false;
-//})
+// $(".furniture__item").on("click", function(event)
+// {
+//     return false;
+// })
  document.addEventListener("DOMContentLoaded",CreateSlider);
 
  // window.addEventListener('resize',CreateSlider);

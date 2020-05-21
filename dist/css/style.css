@@ -814,7 +814,6 @@ button.close-custom-details {
 .nav__form-inlineMine {
   border: 1px solid #2a2a2a;
   padding: 5px 15px;
-  margin: 0 100px 0 0;
 }
 
 .nav__form-controlMine {
@@ -975,29 +974,30 @@ button.close-custom-details {
   height: 302px;
 }
 
-.carousel-control-prevMine, .carousel-control-nextMine {
+.carousel-control-prevMine,
+.carousel-control-nextMine {
   top: 300px;
   height: 40px;
   width: 50%;
-  background-color: #2A2A2A;
+  background-color: #2a2a2a;
   opacity: 2;
 }
 
 .carousel-control-prevMine:hover {
-  background-color: #D58E32;
+  background-color: #d58e32;
   opacity: 2;
 }
 
 .carousel-control-nextMine:hover {
-  background-color: #D58E32;
+  background-color: #d58e32;
   opacity: 2;
 }
 
 .carousel-onlay {
   position: absolute;
-  width: 410px;
-  height: 220px;
-  background-color: #2A2A2A;
+  width: 100%;
+  height: 214px;
+  background-color: #2a2a2a;
   color: #ffffff;
   top: 50%;
   left: 50%;
@@ -1023,15 +1023,15 @@ button.close-custom-details {
 .carousel-onlay-but {
   position: absolute;
   top: 170px;
-  left: 153px;
   padding: 15px 30px;
   border-radius: 3px;
   font-size: 14px;
   font-weight: bolder;
   text-transform: uppercase;
   background-color: #ffffff;
-  color: #2A2A2A;
+  color: #2a2a2a;
   border: none;
+  line-height: 14px;
 }
 
 .carousel-onlay-but:focus {
@@ -1064,7 +1064,8 @@ button.close-custom-details {
     top: 333px;
     left: 270px;
   }
-  .carousel-control-prevMine, .carousel-control-nextMine {
+  .carousel-control-prevMine,
+  .carousel-control-nextMine {
     top: 460px;
   }
 }
@@ -1095,7 +1096,8 @@ button.close-custom-details {
     top: 420px;
     left: 470px;
   }
-  .carousel-control-prevMine, .carousel-control-nextMine {
+  .carousel-control-prevMine,
+  .carousel-control-nextMine {
     top: 640px;
   }
 }
